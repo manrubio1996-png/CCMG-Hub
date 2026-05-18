@@ -31,7 +31,7 @@ input::placeholder,textarea::placeholder{color:var(--text3)}
 #app{display:flex;height:100vh;overflow:hidden}
 #sidebar{width:220px;background:var(--bg2);border-right:1px solid var(--border);display:flex;flex-direction:column;flex-shrink:0}
 #main{flex:1;display:flex;flex-direction:column;min-width:0;overflow:hidden}
-#header{height:60px;background:linear-gradient(120deg,var(--accent),var(--accentB));display:flex;align-items:center;justify-content:space-between;padding:0 20px;flex-shrink:0;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+#header{height:60px;background:linear-gradient(120deg,var(--accent),var(--accentB));display:flex;align-items:center;justify-content:space-between;padding:0 20px;flex-shrink:0;box-shadow:0 2px 12px rgba(0,0,0,0.1)}
 #content{flex:1;overflow-y:auto;padding:24px;background:var(--bg)}
 .sb-logo{padding:16px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
 .sb-ic{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accentB));display:flex;align-items:center;justify-content:center;color:#fff;font-size:17px;flex-shrink:0}
@@ -39,7 +39,7 @@ input::placeholder,textarea::placeholder{color:var(--text3)}
 .sb-ver{font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:0.18em;font-family:monospace}
 .nav-grp{padding:10px 8px 4px}
 .nav-lbl{font-size:9px;font-weight:900;color:var(--text3);text-transform:uppercase;letter-spacing:0.22em;padding:0 8px;margin-bottom:3px;font-family:monospace}
-.nav-btn{width:100%;display:flex;align-items:center;gap:9px;padding:7px 10px;border-radius:8px;border:1px solid transparent;background:transparent;color:var(--text2);font-weight:500;font-size:12.5px;text-align:left}
+.nav-btn{width:100%;display:flex;align-items:center;gap:9px;padding:7px 10px;border-radius:8px;border:1px solid transparent;background:transparent;color:var(--text2);font-weight:500;font-size:12.5px;margin-bottom:2px}
 .nav-btn:hover{background:var(--bg3);color:var(--text)}
 .nav-btn.active{background:rgba(0,201,167,0.12);border-color:rgba(0,201,167,0.3);color:var(--accent2);font-weight:600}
 .nav-btn.adm.active{background:var(--abg);border-color:rgba(124,58,237,0.25);color:var(--admin)}
@@ -87,9 +87,14 @@ input::placeholder,textarea::placeholder{color:var(--text3)}
 .stab{padding:4px 11px;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--text3);font-size:11px;font-weight:600}
 .stab:hover{border-color:var(--border2);color:var(--text2)}
 .stab.on{background:rgba(0,201,167,0.12);border-color:rgba(0,201,167,0.35);color:var(--accent2)}
-.sbox{background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:14px;font-size:12.5px;line-height:1.85;color:var(--text2);white-space:pre-wrap}
+.sbox{background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:14px;font-size:12.5px;line-height:1.85;color:var(--text2);white-space:pre-wrap;word-break:break-word}
+.sbox b{font-weight:700}
+.sbox i{font-style:italic}
+.sbox u{text-decoration:underline}
+.sbox h1{font-size:22px;font-weight:800;margin-bottom:8px}
+.sbox h2{font-size:17px;font-weight:700;margin-bottom:6px}
 .tbl{width:100%;border-collapse:collapse;font-size:12.5px}
-.tbl th{font-size:9.5px;text-transform:uppercase;letter-spacing:0.18em;color:var(--text3);font-family:monospace;font-weight:900;padding:9px 12px;text-align:left;border-bottom:1px solid var(--border);background:var(--bg3);white-space:nowrap}
+.tbl th{font-size:9.5px;text-transform:uppercase;letter-spacing:0.18em;color:var(--text3);font-family:monospace;font-weight:900;padding:9px 12px;text-align:left;border-bottom:1px solid var(--border)}
 .tbl td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:top}
 .tbl tr:hover td{background:var(--bg3)}
 .alrt{display:flex;gap:9px;padding:9px 13px;border-radius:8px;font-size:12.5px;line-height:1.55;margin-bottom:9px}
@@ -115,18 +120,18 @@ input::placeholder,textarea::placeholder{color:var(--text3)}
 .login-wrap{display:flex;align-items:center;justify-content:center;height:100vh;background:linear-gradient(135deg,#0b1220,#1a2840)}
 .login-card{background:rgba(20,30,46,0.97);border:1px solid rgba(0,201,167,0.2);border-radius:16px;padding:40px;width:360px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.4)}
 .login-ic{width:70px;height:70px;border-radius:18px;background:linear-gradient(135deg,var(--admin),#6d28d9);display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 18px}
-.linp{width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:11px 14px;font-size:16px;color:#fff;text-align:center;letter-spacing:0.15em;margin-bottom:12px}
+.linp{width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:11px 14px;font-size:16px;color:#fff;text-align:center;letter-spacing:0.15em;margin-bottom:8px}
 .linp:focus{border-color:rgba(0,201,167,0.5);outline:none}
 .lerr{color:#f87171;font-size:12px;min-height:18px;margin-top:6px}
 .aw{display:flex;height:calc(100vh - 60px);overflow:hidden}
 .asb{width:195px;border-right:1px solid var(--border);padding:12px;flex-shrink:0;overflow-y:auto;background:var(--bg2)}
-.anav{padding:6px 9px;border-radius:7px;border:none;background:transparent;color:var(--text2);width:100%;text-align:left;font-size:12px;font-weight:500;display:flex;align-items:center;gap:7px;margin-bottom:2px}
+.anav{padding:6px 9px;border-radius:7px;border:none;background:transparent;color:var(--text2);width:100%;text-align:left;font-size:12px;font-weight:500;display:flex;align-items:center;gap:7px;margin-bottom:3px}
 .anav:hover{background:var(--bg3)}
 .anav.on{background:var(--abg);color:var(--admin);font-weight:700}
 .ac2{flex:1;overflow-y:auto;padding:22px}
 .albl{font-size:10.5px;font-weight:700;color:var(--text2);margin-bottom:3px;display:block}
 .ainp{width:100%;padding:7px 10px;border:1px solid var(--border);border-radius:6px;background:var(--bg2);color:var(--text)}
-.atxt{width:100%;padding:7px 10px;border:1px solid var(--border);border-radius:6px;background:var(--bg2);color:var(--text);resize:vertical;min-height:72px;font-family:monospace;font-size:12px;line-height:1.6}
+.atxt{width:100%;padding:7px 10px;border:1px solid var(--border);border-radius:6px;background:var(--bg2);color:var(--text);resize:vertical;min-height:72px;font-family:monospace;font-size:12px;line-height:1.5}
 .fg{display:flex;flex-direction:column;gap:10px}
 .rw{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:7px;border:1px solid var(--border);background:var(--bg2);margin-bottom:5px}
 .rw:hover{border-color:var(--border2);background:var(--bg3)}
@@ -139,13 +144,16 @@ input:checked+.ttrack{background:var(--accent)}
 input:checked+.ttrack::after{transform:translateX(16px)}
 .rte-wrap{border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--bg2)}
 .rte-tb{display:flex;gap:2px;flex-wrap:wrap;padding:5px 7px;border-bottom:1px solid var(--border);background:var(--bg3);align-items:center}
-.rte-t{width:27px;height:25px;border:none;background:transparent;border-radius:4px;color:var(--text2);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.rte-t{width:27px;height:25px;border:none;background:transparent;border-radius:4px;color:var(--text2);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer}
 .rte-t:hover{background:var(--border);color:var(--text)}
 .rte-t.on{background:rgba(0,201,167,0.18);color:var(--accent2)}
 .rsep{width:1px;background:var(--border);margin:0 3px;height:20px;align-self:center}
-.rsel{padding:2px 5px;border:1px solid var(--border);border-radius:4px;font-size:11px;background:var(--bg2);color:var(--text);height:25px}
-.rbody{min-height:110px;padding:12px;outline:none;font-size:13px;line-height:1.75;color:var(--text)}
+.rsel{padding:2px 5px;border:1px solid var(--border);border-radius:4px;font-size:11px;background:var(--bg2);color:var(--text);height:25px;cursor:pointer}
+.rbody{min-height:110px;padding:12px;outline:none;font-size:13px;line-height:1.75;color:var(--text);background:var(--bg2);border:none;word-break:break-word}
 .rbody:focus{outline:none}
+.rbody b{font-weight:700}
+.rbody i{font-style:italic}
+.rbody u{text-decoration:underline}
 .rbody h1{font-size:22px;font-weight:800;margin-bottom:8px}
 .rbody h2{font-size:17px;font-weight:700;margin-bottom:6px}
 .rbody h3{font-size:14px;font-weight:700;margin-bottom:5px}
@@ -196,147 +204,35 @@ input:checked+.ttrack::after{transform:translateX(16px)}
 // ── DATA ────────────────────────────────────────────────────────────
 const DEF={
 accounts:[
-{id:1,name:"Regal (English)",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$50",gcType:"CVS",gcTime:"8-12 weeks",gcContact:"(818) 357-5000",gcNote:"Except Follow-Up, ER_TELE, DRE, OMW, ECHO. Jennifer Njenga/Patricia Lee/Win Le/Weizhen Li → 1 hr.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"Hello, my name is [Name] calling on behalf of [Health plan name] on a recorded line.\"\n\n\"We're helping coordinate a no-cost in-home wellness visit — about 45 minutes. Would mornings or afternoons work better?\"",required:"Phase 1: Physical Address · Mailing Address · Email\nPhase 2: Date & Time (3-hr window) · Access & Logistics (gate codes, building#, pets)\nPhase 3: Phone Numbers · SMS Consent · Medication List · AWV Letter\nPhase 4: Gift Card $50 CVS (8-12 weeks) — note in CRM · Other Household Member?",closing:"\"We have scheduled your In-home Annual Wellness Visit on [Date and Time Window]. Please write it down. Have a great day!\""}},
-{id:2,name:"Regal (Español)",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$50",gcType:"CVS",gcTime:"8-12 weeks",gcContact:"(818) 357-5000",gcNote:"Igual que Regal English.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"Hola, mi nombre es [Nombre] y le llamo en nombre de [plan de salud] en una línea grabada.\"",required:"Phase 1–4 estándar igual que Regal English.",closing:"\"Su visita ha sido programada para [Fecha y Hora]. Por favor anótelo. ¡Excelente día!\""}},
-{id:3,name:"PHP",tag:"inhome",types:["In-Home"],dur:"1 Hour",win:"3 hrs",gc:false,gcAmt:"",gcType:"",gcTime:"",gcContact:"",gcNote:"No gift card for PHP.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"Hi, [First Name]! This is [Agent] calling from Care Connectors on a recorded line on behalf of [Physician's Name].\"",pitch:"\"Your PCP is offering a wellness check-up that comes to you — right in the comfort of your own home. About 30-45 minutes. Can we get you scheduled?\"",required:"Standard in-home required info. NO gift card for PHP.",closing:"\"Your in-home visit is scheduled for [Date] between [Time Window]. Please have your medications ready. Thank you!\""}},
-{id:4,name:"PMGSJ / Optum",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$25",gcType:"Visa",gcTime:"8-12 weeks",gcContact:"(877) 267-8861",gcNote:"Only Home Visits.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"calling on behalf of Optum (formerly Physicians Medical Group of San Jose)\"",required:"Standard in-home info. Gift card: $25 Visa, 8-12 weeks — note in CRM.",closing:"\"We have scheduled your In-home Annual Wellness Visit on [Date and Time Window]. Please write it down. Have a great day!\""}},
-{id:5,name:"NAMM",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$25",gcType:"Visa",gcTime:"8-12 weeks",gcContact:"(877) 267-8861",gcNote:"All Visits.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"calling on behalf of Optum (formerly North American Medical Management)\"",required:"Standard in-home info. Gift card: $25 Visa, 8-12 weeks — note in CRM.",closing:"\"We have scheduled your In-home Annual Wellness Visit on [Date and Time Window]. Please write it down. Have a great day!\""}},
-{id:6,name:"Monarch",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$25",gcType:"Visa",gcTime:"8-12 weeks",gcContact:"(877) 267-8861",gcNote:"Only Home Visits. EXCEPTION: CalOptima — do NOT offer.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"calling on behalf of Optum, formerly Monarch\"",required:"Standard in-home info. Gift card: $25 Visa — EXCEPT CalOptima.",closing:"\"We have scheduled your In-home Annual Wellness Visit on [Date and Time Window]. Please write it down. Have a great day!\""}},
-{id:7,name:"HCPCA",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$25",gcType:"Visa",gcTime:"8-12 weeks",gcContact:"(877) 267-8861",gcNote:"Only Home Visits.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"calling on behalf of Optum (formerly Health Care Partners of California)\"",required:"Standard in-home info. Gift card: $25 Visa, 8-12 weeks.",closing:"\"We have scheduled your In-home Annual Wellness Visit on [Date and Time Window]. Please write it down. Have a great day!\""}},
-{id:8,name:"Kelsey (Home Visit)",tag:"inhome",types:["In-Home"],dur:"1 Hour",win:"3 hrs",gc:false,gcAmt:"",gcType:"",gcTime:"",gcContact:"713-352-3327",gcNote:"No gift card. Ask if member prefers female NP. If NP >15 min late call 713-352-3327.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"calling on behalf of KelseyCare Advantage and [PCP Name]\"\nCallback: 713-352-3327, 8AM-5PM CST",required:"Standard in-home info + female NP preference. DO NOT ask about AWV letter. No gift card.",closing:"\"We have scheduled an In-home visit at your house on [Day], [Date], [Time]. Please write it down.\""}},
-{id:9,name:"Kelsey (Telemed)",tag:"telemed",types:["Telemedicine"],dur:"30 min",win:"2 hrs",gc:false,gcAmt:"",gcType:"",gcTime:"",gcContact:"713-352-3327",gcNote:"No gift card for Kelsey.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"calling on behalf of KelseyCare Advantage and [PCP Name]\"",required:"Telemed standard info. DO NOT ask about AWV letter. No gift card.",closing:"\"We have scheduled your AWV via Telemedicine on [Date and Time Window]. Please write it down.\""}},
-{id:10,name:"Telemedicine (General)",tag:"telemed",types:["Telemedicine"],dur:"30 min",win:"2 hrs",gc:true,gcAmt:"Varies",gcType:"Varies",gcTime:"Varies",gcContact:"",gcNote:"Check account-specific GC. NEVER say FaceTime/Zoom. Confirm camera + internet.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"Hi, [First Name]. This is [Agent] on a recorded line on behalf of [Medical Group].\"",pitch:"\"I'm calling about your Annual Wellness Visit — no cost, over video, about 30-45 minutes.\"",required:"Telemed Intake: Home Address · Email (CRITICAL) · Date/Time (2-hr window) · Device+Camera+Internet · SMS Consent · GC [Check Account Rule].",closing:"\"We have scheduled your AWV via Telemedicine on [Date and Time Window]. Please write it down.\""}},
-{id:11,name:"PCP Office / Clinic",tag:"clinic",types:["Clinic"],dur:"30/45/60 min",win:"Specific time",gc:true,gcAmt:"Varies",gcType:"Varies",gcTime:"Varies",gcContact:"",gcNote:"No overlapping. BCBSRI PCP → 45 min.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"Hi, [First Name]. This is [Agent] calling on a recorded line on behalf of [Medical Group].\"",required:"SPECIFIC TIME (no window/overlap). Arrive 15 MIN EARLY. Bring medication list.",closing:"\"We have scheduled your AWV at [PCP Office Address] on [Date and Time]. Please write it down.\""}},
-{id:12,name:"Mobile Unit (MU)",tag:"mu",types:["Mobile Unit"],dur:"30 min",win:"Specific time",gc:true,gcAmt:"Varies",gcType:"Varies",gcTime:"Varies",gcContact:"",gcNote:"WellMed MU: GC after 1st rebuttal. BCBSRI MU → 45 min.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"Hi, [First Name]. This is [Agent] calling on a recorded line on behalf of [Medical Group].\"",required:"SPECIFIC TIME. Write down pop-up clinic address & check CRM 'Open Gaps'. Bring medication list.",closing:"\"We have scheduled your AWV at [MU Location] on [Date and Time]. Please write it down.\""}},
-{id:20,name:"Caremore (In-Home)",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$50",gcType:"Visa",gcTime:"6-8 weeks",gcContact:"",gcNote:"Gift card mentioned in pitch. Patricia Lee → 1 hr.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"calling on behalf of Caremore Health\"",pitch:"\"As a special thank you, Caremore Health is offering you a $50 gift card.\"",verification:"Full Name + DOB + Full Address (all three required for HIPAA)",required:"Standard in-home info. Gift card: $50 Visa, 6-8 weeks.",closing:"\"We have scheduled your In-home Annual Wellness Visit on [Date and Time Window]. Please write it down. Have a great day!\""}},
-{id:22,name:"BSCA (Home Visit)",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$50",gcType:"OTC Card",gcTime:"90 days",gcContact:"(323) 391-3922 Mon-Sun 8AM-7PM PT",gcNote:"Declines recording → DNC 'Refused Call Recording'. Jennifer Njenga/Patricia Lee/Win Le/Weizhen Li → 1 hr.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"calling on behalf of Blue Shield of California. This call may be recorded.\"",verification:"Name → partial address (city+ZIP) → DOB only if MISMATCH",required:"Standard in-home info. Gift card: $50 OTC Card, 90 days.",closing:"\"To confirm, we've scheduled your visit for [Date and Time Window]. Thank you for being a valued Blue Shield of California member!\""}},
-{id:25,name:"BCBSRI",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$25",gcType:"Flex Card",gcTime:"8-12 weeks",gcContact:"(401) 459-1000",gcNote:"Program: 'House Call by Blue.' Do NOT book HEDIS, DRE, OMW, or Diabetes until further notice.",visible:true,seo:{title:"",desc:""},scripts:{opening:"\"calling on behalf of Blue Cross & Blue Shield of Rhode Island\"",pitch:"\"As part of the House Call by Blue program, BCBSRI is offering you a $25 Flex Card Credit.\"",required:"Standard in-home info. Gift card: $25 Flex Card, 8-12 weeks.",closing:"\"We have scheduled your visit on [Day, Month, Date and Time]. Please write it down. Have a great day.\""}}
+{id:1,name:"Regal (English)",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$50",gcType:"CVS",gcTime:"8-12 weeks",gcContact:"(818) 357-5000",gcNote:"Except Follow-Up, ER_Telehealth",visible:true,seo:{title:"",desc:""},scripts:{opening:"",pitch:"",verification:"",required:"",closing:""}},
+{id:2,name:"Regal (Español)",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$50",gcType:"CVS",gcTime:"8-12 weeks",gcContact:"(818) 357-5000",gcNote:"Igual que Regal English",visible:true,seo:{title:"",desc:""},scripts:{opening:"",pitch:"",verification:"",required:"",closing:""}},
+{id:3,name:"PHP",tag:"inhome",types:["In-Home"],dur:"1 Hour",win:"3 hrs",gc:false,gcAmt:"",gcType:"",gcTime:"",gcContact:"",gcNote:"No gift card for PHP.",visible:true,seo:{title:"",desc:""},scripts:{opening:"",pitch:"",verification:"",required:"",closing:""}},
+{id:4,name:"PMGSJ / Optum",tag:"inhome",types:["In-Home"],dur:"45 min",win:"3 hrs",gc:true,gcAmt:"$25",gcType:"Visa",gcTime:"8-12 weeks",gcContact:"(877) 267-8861",gcNote:"Only Home Visits.",visible:true,seo:{title:"",desc:""},scripts:{opening:"",pitch:"",verification:"",required:"",closing:""}}
 ],
 durations:[
 {account:"ARKOS HV",dur:"1 Hour",cls:"1h",note:""},{account:"BCBSAR",dur:"45 min",cls:"45",note:""},
-{account:"BCBSRI HV",dur:"45 min",cls:"45",note:"Robert Desrosiers & Danielle Goldman → 1 hr"},
-{account:"BCBSRI MU",dur:"45 min",cls:"45",note:"Exception to standard MU 30 min rule"},
-{account:"BSCA HV",dur:"45 min",cls:"45",note:"Jennifer Njenga, Patricia Lee, Win Le, Weizhen Li → 1 hr"},
-{account:"Caremore HV",dur:"45 min",cls:"45",note:"Patricia Lee → 1 hr"},
-{account:"DRE",dur:"30 min",cls:"30",note:"MT Lizbeth Osorio → 45 min"},
-{account:"HCPCA",dur:"45 min",cls:"45",note:"Jennifer Njenga, Patricia Lee, Win Le, Weizhen Li → 1 hr"},
-{account:"HEDIS / OMW / DRE",dur:"30 min",cls:"30",note:""},
-{account:"John Muir",dur:"1 Hour",cls:"1h",note:""},{account:"Kaiser HV",dur:"45 min",cls:"45",note:""},
-{account:"Kelsey",dur:"1 Hour",cls:"1h",note:"All Kelsey campaigns"},{account:"Monarch",dur:"45 min",cls:"45",note:""},
-{account:"NAMM",dur:"45 min",cls:"45",note:""},{account:"OCCO/OCNM/OCNV/OCOR/OCUT/OCWA",dur:"1 Hour",cls:"1h",note:"All Optum Care → 1 hr"},
-{account:"PHP",dur:"1 Hour",cls:"1h",note:""},{account:"PMGSJ",dur:"45 min",cls:"45",note:""},
-{account:"Regal",dur:"45 min",cls:"45",note:"Jennifer Njenga, Patricia Lee, Win Le, Weizhen Li → 1 hr"},
-{account:"Regal-Conference",dur:"30 min",cls:"30",note:""},{account:"Telemed (all)",dur:"30 min",cls:"30",note:"2-hr window"},
-{account:"WellMed AWV",dur:"1 Hour",cls:"1h",note:""},{account:"WellMed HEDIS/MU",dur:"30 min",cls:"30",note:""}
+{account:"BCBSRI HV",dur:"45 min",cls:"45",note:"Robert Desrosiers & Danielle Goldman → 1 hr"}
 ],
 dispositions:[
 {p:"Appointment Scheduled",c:"",w:"Member commits to an appointment",a:""},
-{p:"Voicemail",c:"",w:"You leave a voice message",a:""},
-{p:"Call Unsuccessful",c:"No Answer",w:"Phone rings with no answer",a:"After no more than 1 minute of ringing"},
-{p:"",c:"Line Busy",w:"Busy signal received",a:"After 3rd attempt → Wrong Number"},
-{p:"",c:"Unable to Leave Message",w:"Full mailbox or no mailbox",a:""},
-{p:"Callback",c:"Member Requests Callback",w:"Member gives specific day/date/time",a:"Schedule for member's preferred time"},
-{p:"",c:"Unable to Speak to Member",w:"Disconnected, unavailable, hangs up",a:"Callback ~3 days"},
-{p:"",c:"Member Remote",w:"Remote area, no NP in region",a:"DO NOT note 'No NP Available.' Callback ~2 weeks."},
-{p:"",c:"Follow-Up",w:"Busy, no specific date",a:"3 days. Member says they'll call back → 2 weeks."},
-{p:"Not Interested",c:"Member Prefers PCP",w:"Prefers own doctor",a:"OFFER REBUTTAL (except Kaiser)"},
-{p:"",c:"Member Declines",w:"Not interested, hangs up",a:"Add notes with specific reason"},
-{p:"Disconnected Number",c:"",w:"Non-working or disconnected number",a:""},
-{p:"Deceased",c:"",w:"Informed member is deceased",a:"Tag 'Deceased' immediately"},
-{p:"Do Not Call",c:"Do Not Call",w:"Member requests DNC",a:"Add notes with reason"},
-{p:"",c:"Member Refused Recording",w:"Member declines recording (BSCA)",a:"DNC 'Refused Call Recording'"},
-{p:"Wrong Number",c:"",w:"Person says member doesn't use this number",a:""},
-{p:"Communication Barrier",c:"",w:"Language barrier (not Spanish)",a:"Note specific language"},
-{p:"Member Out of State",c:"",w:"Moved or temporarily out of state",a:"Offer Telemed if available."}
+{p:"Voicemail",c:"",w:"You leave a voice message",a:""}
 ],
 aer:[
-{id:"not-interested",name:"Not Interested",ack:"It sounds like you feel your health is currently stable.",emp:"I understand. When you're feeling fine, extra visits can feel unnecessary.",rebuttals:["That's exactly why preventive care matters most when you feel fine — many serious conditions begin silently.","Preventive visits help keep everything on track — medications, screenings, health risks.","It's about keeping things simple now so they don't become complicated later."]},
-{id:"prefer-pcp",name:"Prefer PCP / VA",ack:"That's great — having a doctor you trust is important.",emp:"I completely understand. If you already feel well taken care of, another visit may not seem necessary.",rebuttals:["This visit supports your PCP, not replaces them. Results are shared with your doctor.","Even members very loyal to their PCP complete this for dedicated prevention time.","This gives you and your doctor one more chance to catch anything early."]},
-{id:"already-had",name:"Already Had Assessment",ack:"That's great — staying updated is important.",emp:"I understand — if you already had one, it can feel repetitive.",rebuttals:["Even if you've had one, this visit focuses on prevention — making sure nothing is overlooked.","Health information changes quickly. This ensures your record is fully updated for the year.","This helps keep everything aligned with your coverage so there aren't any gaps later."]},
-{id:"healthy",name:"Healthy / Not Sick",ack:"That's wonderful to hear.",emp:"I understand why it might not feel urgent.",rebuttals:["Preventive care isn't for when you're sick — it's for staying healthy long term.","Even healthy individuals benefit from structured reviews because early risk factors develop quietly.","This just helps you stay exactly where you are — healthy and ahead of any problems."]},
-{id:"too-busy",name:"Too Busy",ack:"It sounds like your schedule is very full.",emp:"I understand — adding anything extra can feel overwhelming.",rebuttals:["This assessment is 15–30 minutes with no travel required.","Delaying prevention often results in longer appointments later.","A little time now can save a lot more time and stress down the road."]},
-{id:"call-back",name:"Call Me Back",ack:"I understand — this might not be the best time.",emp:"I know it's hard to make decisions on the spot.",rebuttals:["We can reserve a flexible appointment — if anything changes, we can always adjust.","Many people plan to schedule later, but it often gets delayed when it's not on the calendar.","Setting it now just makes sure it doesn't fall through the cracks."]},
-{id:"who-is-cc",name:"Who is Care Connectors?",ack:"That's a great question.",emp:"It's smart to double-check.",rebuttals:["We coordinate directly with your medical group to complete your annual preventive assessment.","Our role is preventive coordination — to strengthen, not replace, your existing provider relationship.","We're simply here to support your care team and help everything run more smoothly."]},
-{id:"whats-catch",name:"Free — What's the Catch?",ack:"I completely understand wanting reassurance.",emp:"It's smart to ask questions.",rebuttals:["This is a covered preventive benefit — no hidden fees, HIPAA-protected, shared only with your doctor.","Preventive programs exist to reduce long-term healthcare risks by identifying concerns early.","There's really no catch — it's simply an extra layer of protection already included in your benefits."]},
-{id:"language",name:"Language Barrier",ack:"Thank you for letting me know.",emp:"Communication challenges happen.",rebuttals:["A trusted family member can assist during the visit so nothing is misunderstood.","We want the process to feel comfortable and fully understood at every step.","We simply want to make sure everything is clear and you feel confident moving forward."]}
+{id:"not-interested",name:"Not Interested",ack:"It sounds like you feel your health is currently stable.",emp:"I understand. When you're feeling fine, extra visits can feel unnecessary.",rebuttals:["Even if you feel well..."]}
 ],
 acronyms:[
-{code:"BCBSAR",full:"Blue Cross Blue Shield Arkansas",spiel:"calling on behalf of Arkansas [AR-kən-saw] Blue Cross Blue Shield"},
-{code:"BCBSRI",full:"Blue Cross Blue Shield Rhode Island — Program: 'House Call by Blue'",spiel:"calling on behalf of Blue Cross & Blue Shield of Rhode Island"},
-{code:"BSCA",full:"Blue Shield of California",spiel:"calling on behalf of Blue Shield of California"},
-{code:"HCPCA",full:"Optum, formerly Health Care Partners of California",spiel:"calling on behalf of Optum (formerly Health Care Partners of California)"},
-{code:"Kaiser",full:"Kaiser Permanente",spiel:"calling on behalf of Kaiser Permanente — Do NOT offer rebuttal for Member Prefers PCP"},
-{code:"Kelsey",full:"Kelsey Care Advantage",spiel:"calling on behalf of KelseyCare Advantage and [PCP Name]"},
-{code:"Monarch",full:"Optum, formerly Monarch",spiel:"calling on behalf of Optum, formerly Monarch"},
-{code:"NAMM",full:"Optum, formerly North American Medical Management",spiel:"calling on behalf of Optum (formerly North American Medical Management)"},
-{code:"OCCO/OCNV/OCNM/OCOR/OCUT/OCWA",full:"Optum Care (various states)",spiel:"calling on behalf of United Health Care (all OC campaigns)"},
-{code:"PMGSJ",full:"Optum, formerly Physicians Medical Group of San Jose",spiel:"calling on behalf of Optum (formerly Physicians Medical Group of San Jose)"},
-{code:"RMG",full:"Regal Medical Group — also: LMG, GCMG, ADOC",spiel:"ALWAYS say 'Regal Medical Group' regardless of sub-name"},
-{code:"WellMed",full:"WellMed — Campaigns: WGTX, WNF, WNFT, WNT, WNTX, WTAU, WTCC, WTEP, WTRG, WTSA",spiel:"UHC plan → 'calling on behalf of United Health Care'\nNon-UHC plan → 'calling on behalf of WellMed'"}
+{code:"BCBSAR",full:"Blue Cross Blue Shield Arkansas",spiel:"calling on behalf of Arkansas Blue Cross Blue Shield"}
 ],
 reminders:[
-{label:"Live Call — Opening",color:"#00c9a7",script:"\"Hello, this is [Your Name]. May I please speak with Mr./Mrs. [Member's Last Name]?\" [Wait]\n\"This call is being recorded for training and security purposes.\""},
-{label:"If NOT the Member",color:"#f59e0b",script:"\"I'm calling regarding an appointment reminder that can only be discussed with the member or an authorized representative. Are you authorized to discuss appointments?\"\nIf YES → Give appointment details.\nIf NO → \"Please ask the member to return our call.\""},
-{label:"With the Member",color:"#00c9a7",script:"\"I'm calling from Care Connectors on behalf of [Medical Group]. How are you today?\"\n\"I'm calling to remind you of your [visit type] scheduled for tomorrow at [time].\""},
-{label:"Voicemail Script",color:"#22c55e",script:"\"Hello, this is [Your Name] calling from Care Connectors on behalf of [Medical Group] for Mr./Mrs. [Member's Last Name].\nI'm calling to remind you of your appointment tomorrow at [time] at [location].\nIf you need to reschedule, call us at [number]. I'll repeat: [number]. Thank you!\""}
+{label:"Live Call — Opening",color:"#00c9a7",script:"Hello, this is [Your Name]..."}
 ],
 qa:[
 {name:"1. Opening & Branding",pts:24,items:[
-{id:"q1a",text:"Stated name on greeting",note:"−2",pts:2,auto:false},
-{id:"q1b",text:"Used verbatim script (accounts requiring it)",note:"−10",pts:10,auto:false},
-{id:"q1c",text:"Stated correct CCMG/medical group name",note:"−5",pts:5,auto:false},
-{id:"q1d",text:"Stated purpose + visit duration + GC if account-specific",note:"−5",pts:5,auto:false},
-{id:"q1e",text:"No delayed greeting (within 3 seconds)",note:"−2",pts:2,auto:false}]},
-{name:"2. Verification",pts:15,items:[
-{id:"q2a",text:"Followed verification — did NOT give DOB first",note:"−5 incomplete, −10 failed",pts:10,auto:false},
-{id:"q2b",text:"Did not share personal info with unauthorized person",note:"−10 risk",pts:5,auto:false}]},
-{name:"3. AER & Rapport",pts:13,items:[
-{id:"q3a",text:"Applied AER method; acknowledged responses",note:"−5",pts:5,auto:false},
-{id:"q4a",text:"Made effort to build rapport",note:"−2",pts:2,auto:false},
-{id:"q4b",text:"Addressed member correctly; apologized if wrong",note:"−2",pts:2,auto:false},
-{id:"q4c",text:"Did not say ma'am/sir more than twice",note:"−2",pts:2,auto:false},
-{id:"q4d",text:"Addressed member by name at least once",note:"−2",pts:2,auto:false}]},
-{name:"4. Communication Skills",pts:48,items:[
-{id:"q5a",text:"No grammar lapses",note:"−2",pts:2,auto:false},
-{id:"q5c",text:"Active listening",note:"−5",pts:5,auto:false},
-{id:"q5e",text:"Clear communication",note:"−5",pts:5,auto:false},
-{id:"q5g",text:"Minimal fillers/stammering",note:"−2",pts:2,auto:false},
-{id:"q5i",text:"Did not sound scripted/robotic",note:"−2",pts:2,auto:false},
-{id:"q5j",text:"Sounded confident",note:"−2",pts:2,auto:false},
-{id:"q5l",text:"No interruptions/overtalking",note:"−5",pts:5,auto:false},
-{id:"q5m",text:"Appropriate tone",note:"−5",pts:5,auto:false},
-{id:"q5n",text:"No unprofessional conduct",note:"−10",pts:10,auto:false}]},
-{name:"5. Tools & CRM",pts:91,items:[
-{id:"q8a",text:"Checked calendar for NP availability",note:"−5",pts:5,auto:false},
-{id:"q8d",text:"Booked correct visit type per Five9 skill",note:"−10 CRITICAL",pts:10,auto:false},
-{id:"q8f",text:"Updated GC info (mailing + email)",note:"−10 CRITICAL",pts:10,auto:false},
-{id:"q8h",text:"Correct disposition used",note:"−10",pts:10,auto:false},
-{id:"q8j",text:"Correct project used",note:"−10",pts:10,auto:false},
-{id:"q8k",text:"Left voicemail when appropriate",note:"−10",pts:10,auto:false},
-{id:"q8l",text:"Followed disconnected call instructions",note:"−10",pts:10,auto:false}]},
-{name:"6. Complete Info",pts:87,items:[
-{id:"q9b",text:"No misinformation with severe impact",note:"−10 CRITICAL",pts:10,auto:false},
-{id:"q9c",text:"Correct GC amount, type, AND timeframe",note:"−2",pts:2,auto:false},
-{id:"q9e",text:"Asked for SMS consent",note:"−2",pts:2,auto:false},
-{id:"q9h",text:"Confirmed complete home address",note:"−10 CRITICAL",pts:10,auto:false},
-{id:"q9i",text:"Confirmed mailing address",note:"−10 CRITICAL",pts:10,auto:false},
-{id:"q9j",text:"Confirmed email",note:"−10 CRITICAL",pts:10,auto:false},
-{id:"q9n",text:"Asked if another household member could benefit",note:"−5",pts:5,auto:false},
-{id:"q9q",text:"Obtained all special instructions",note:"−10",pts:10,auto:false}]},
-{name:"7. Recap & Closing",pts:11,items:[
-{id:"q11a",text:"Recap with date, time window, write-it-down",note:"−5 no recap, −3 incomplete",pts:5,auto:false},
-{id:"q11b",text:"Closed positively",note:"−3",pts:3,auto:false},
-{id:"q11c",text:"Followed ghost spiel if unresponsive",note:"−3",pts:3,auto:false}]},
-{name:"AUTO-FAIL Critical Errors",pts:0,items:[
-{id:"af1",text:"No call avoidance (no hold >2-3 min, no inappropriate disconnect)",note:"AUTO-FAIL",pts:0,auto:true},
-{id:"af2",text:"No missed pertinent info (address, gate code, appt date/time)",note:"AUTO-FAIL",pts:0,auto:true},
-{id:"af3",text:"Telemed explained as VIDEO — device camera + internet confirmed",note:"AUTO-FAIL",pts:0,auto:true},
-{id:"af4",text:"No critical booking/CRM errors",note:"AUTO-FAIL",pts:0,auto:true}]}
+{id:"q1a",text:"Stated name on greeting",note:"−2",pts:2,auto:false}
+]}
 ],
 users:[
-{id:1,name:"Admin",email:"admin@careconnectors.com",role:"superadmin",avatar:"🛡️",color:"#7c3aed",active:true,created:"2025-01-01"},
-{id:2,name:"Supervisor",email:"supervisor@careconnectors.com",role:"admin",avatar:"👔",color:"#2563eb",active:true,created:"2025-01-15"},
-{id:3,name:"Agent",email:"agent@careconnectors.com",role:"viewer",avatar:"🎧",color:"#10b981",active:true,created:"2025-02-01"}
+{id:1,name:"Admin",email:"admin@careconnectors.com",role:"superadmin",avatar:"🛡️",color:"#7c3aed",active:true,created:"2025-01-01"}
 ]};
 
 // ── STATE ───────────────────────────────────────────────────────────
@@ -382,7 +278,7 @@ function render(){
 function ri(){const c=document.getElementById('content');if(c){c.innerHTML=panelHTML();bind();}}
 function ra(){const c=document.querySelector('.ac2');if(c){c.innerHTML=admSec();bind();}}
 
-// ── LOGIN ────────────────────────────────────────────────────────────
+// ── LOGIN ───────────────────────────────────────────────────────────
 function loginHTML(){
   return `<div class="login-wrap"><div class="login-card">
     <div class="login-ic">🛡️</div>
@@ -397,23 +293,14 @@ function loginHTML(){
 
 // ── APP ──────────────────────────────────────────────────────────────
 const NAV=[
-  {sec:'Scheduling',items:[{id:'accounts',ic:'🏥',lb:'Accounts'},{id:'duration',ic:'⏱',lb:'Durations'},{id:'disposition',ic:'🏷',lb:'Dispositions'}]},
-  {sec:'Call Tools',items:[{id:'aer',ic:'💬',lb:'AER Rebuttals'},{id:'reminder',ic:'🔔',lb:'Reminder Calls'},{id:'acronyms',ic:'📖',lb:'Acronyms'}]},
-  {sec:'Quality',items:[{id:'qa',ic:'✅',lb:'QA Checklist'},{id:'crmnotes',ic:'📝',lb:'CRM Notes'},{id:'procedures',ic:'📋',lb:'Procedures'}]},
+  {sec:'Scheduling',items:[{id:'accounts',ic:'🏥',lb:'Accounts'}]},
   {sec:'System',items:[{id:'admin',ic:'⚙️',lb:'Admin Panel',adm:true}]}
 ];
 const META={
   accounts:{t:'Account Hub',s:'Protocol scripts, reward eligibility, and provider specifics'},
-  duration:{t:'Time Allocation',s:'Specific slot requirements and NP limitations'},
-  disposition:{t:'System Outcomes',s:'Proper documentation of call results in CRM'},
-  aer:{t:'Rebuttal Engine',s:'Acknowledge, Empathize, Rebut protocol for objections'},
-  reminder:{t:'Engagement Follow-Up',s:'Verification and appointment confirmation scripts'},
-  acronyms:{t:'Codex Reference',s:'Account abbreviations and authorized branding'},
-  qa:{t:'Quality Assurance',s:'Real-time performance evaluation and critical safeguards'},
-  crmnotes:{t:'Documentation Standards',s:'Guidelines for professional system notation'},
-  procedures:{t:'Operational Flow',s:'Technical handling for disconnections and waiting states'},
   admin:{t:'Command Center',s:'Global data modification and system oversight'}
 };
+
 function appHTML(){
   const m=META[S.panel]||{t:S.panel,s:''};
   return `<div id="app">
@@ -425,20 +312,11 @@ function appHTML(){
             <span class="nav-ic">${i.ic}</span><span>${i.lb}</span></button>`).join('')}
         </div>`).join('')}
       </nav>
-      <div class="sb-foot">
-        <div style="display:flex;align-items:center;margin-bottom:4px"><span class="sdot"></span>
-          <span style="font-size:9.5px;font-family:monospace;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:0.15em">Five9 Live</span>
-        </div>
-        <div style="font-size:9px;font-family:monospace;color:var(--text3);text-transform:uppercase;line-height:1.6">CRM Integrated · Auto-Save On</div>
-        <div style="display:inline-flex;align-items:center;gap:4px;font-size:9px;font-family:monospace;color:var(--green);background:var(--gbg);padding:2px 7px;border-radius:4px;margin-top:5px">💾 All changes saved</div>
-      </div>
     </aside>
     <div id="main">
       <div id="header">
         <div><div class="h-title">${m.t}</div><div class="h-sub">${m.s}</div></div>
         <div class="h-act">
-          <div class="h-wrap"><span class="h-sic">🔍</span>
-            <input id="gsrch" class="h-srch" placeholder="Global search…" value="${esc(S.search)}"/></div>
           <button class="hbtn" id="dark-tog">${S.dark?'☀️':'🌙'}</button>
         </div>
       </div>
@@ -453,11 +331,8 @@ const SL={opening:'Opening',pitch:'Pitch',verification:'Verification',required:'
 
 function panelHTML(){
   switch(S.panel){
-    case 'accounts':return accPanel();case 'duration':return durPanel();
-    case 'disposition':return dispPanel();case 'aer':return aerPanel();
-    case 'reminder':return remPanel();case 'acronyms':return acrPanel();
-    case 'qa':return qaPanel();case 'crmnotes':return crmPanel();
-    case 'procedures':return procPanel();case 'admin':return admPanel();
+    case 'accounts':return accPanel();
+    case 'admin':return admPanel();
     default:return '';
   }
 }
@@ -489,7 +364,7 @@ function accPanel(){
 
 function accDetail(a){
   const tc=TC[a.tag]||TC.inhome;
-  const tabs=Object.keys(SL).filter(k=>a.scripts&&a.scripts[k]);
+  const tabs=Object.keys(SL).filter(k=>a.scripts&&a.scripts[k]!==undefined);
   const at=tabs.includes(S.activeTab)?S.activeTab:(tabs[0]||'opening');
   const gcC=a.gc?'var(--green)':'var(--red)';
   const gcBg=a.gc?'var(--gbg)':'var(--rbg)';
@@ -516,232 +391,22 @@ function accDetail(a){
     <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px">
       ${tabs.map(k=>`<button class="stab${k===at?' on':''}" data-tab="${k}">${SL[k]}</button>`).join('')}
     </div>
-    <div class="sbox">${esc(a.scripts[at]||'N/A')}</div>
-  </div>`;
-}
-
-function durPanel(){
-  const q=S.search.toLowerCase();
-  const flt=S.durations.filter(d=>!q||d.account.toLowerCase().includes(q));
-  return `<div class="alrt ab">⚠️ HEDIS, DRE, OMW, FOBT, BCS cannot be booked as Telemed. Never book AWV to MA/MT or DRE/OMW to NP.</div>
-  <div class="alrt ab">👤 Always 1 hr: Jennifer Njenga · Win Le · Weizhen Li · Robert Desrosiers · Danielle Goldman · Patricia Lee · All WellMed · All Kelsey · All Optum Care NPs</div>
-  <div class="card" style="margin-top:4px">
-    <div class="chdr">Global Rules</div>
-    <ul style="font-size:13px;color:var(--text2);line-height:2.1;list-style:none;margin-bottom:14px">
-      <li>⏱ Telemed → 30 min, 2-hr window</li><li>⏱ Home Visit → 45 min or 1 hr depending on NP. No overlapping.</li>
-      <li>⏱ MU → 30 min, specific time. Exception: BCBSRI MU → 45 min</li><li>⏱ PCP Office → 30/45/60 min, no overlapping. BCBSRI PCP → 45 min</li>
-    </ul>
-    <div style="overflow-x:auto"><table class="tbl">
-      <thead><tr><th>Account</th><th>Duration</th><th>Notes</th></tr></thead>
-      <tbody>${flt.map(d=>`<tr>
-        <td style="font-weight:600;color:var(--text)">${esc(d.account)}</td>
-        <td><span class="bdg ${d.cls==='30'?'bg-g':d.cls==='45'?'bg-y':'bg-r'}">${esc(d.dur)}</span></td>
-        <td style="color:var(--text3);font-size:12px;font-style:italic">${esc(d.note)||'—'}</td>
-      </tr>`).join('')}</tbody>
-    </table></div>
-  </div>`;
-}
-
-function dispPanel(){
-  return `<div class="alrt ab">ℹ️ Disconnected mid-booking: Don't close CRM → Follow-Up Work → Callback in Five9 → call back → reached: book + Appt Scheduled; not reached: Disconnected Call Process</div>
-  <div class="card" style="margin-top:8px;padding:0;overflow:hidden"><div style="overflow-x:auto">
-    <table class="tbl"><thead><tr><th>Disposition</th><th>Sub-Disposition</th><th>When to Use</th><th>Required Action</th></tr></thead>
-    <tbody>${S.dispositions.map(d=>`<tr>
-      <td style="font-weight:${d.p&&!d.c?700:400};color:var(--text);background:${d.p&&!d.c?'var(--bg3)':'inherit'}">${esc(d.p)}</td>
-      <td style="color:var(--text2);font-style:italic">${esc(d.c)}</td>
-      <td style="color:var(--text3);line-height:1.55">${esc(d.w)}</td>
-      <td style="color:var(--yellow);font-weight:500;line-height:1.55">${esc(d.a)||'—'}</td>
-    </tr>`).join('')}</tbody></table>
-  </div></div>`;
-}
-
-function aerPanel(){
-  const sel=S.aer.find(o=>o.id===S.aerSel);
-  return `<div class="alrt ay">🎁 Always mention the gift card when available — position it as appreciation for prioritizing preventive care.</div>
-  <div class="aergrid" style="margin-top:10px">
-    ${S.aer.map(o=>`<button class="aerb${o.id===S.aerSel?' on':''}" data-aer="${o.id}">${esc(o.name)}</button>`).join('')}
-  </div>
-  ${sel?`<div class="card" style="box-shadow:var(--sh2)">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
-      <div><div style="display:inline-block;padding:3px 10px;border-radius:999px;font-size:9.5px;font-weight:800;text-transform:uppercase;background:rgba(0,201,167,0.12);color:var(--accent2);margin-bottom:7px">Acknowledge</div>
-        <div style="padding:10px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;font-size:13px;line-height:1.75;color:var(--text2);font-style:italic">${esc(sel.ack)}</div>
-      </div>
-      <div><div style="display:inline-block;padding:3px 10px;border-radius:999px;font-size:9.5px;font-weight:800;text-transform:uppercase;background:var(--ybg);color:var(--yellow);margin-bottom:7px">Empathize</div>
-        <div style="padding:10px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;font-size:13px;line-height:1.75;color:var(--text2);font-style:italic">${esc(sel.emp)}</div>
-      </div>
-    </div>
-    <div style="display:inline-block;padding:3px 10px;border-radius:999px;font-size:9.5px;font-weight:800;text-transform:uppercase;background:rgba(59,130,246,0.1);color:var(--accentB);margin-bottom:9px">Rebuttals</div>
-    ${sel.rebuttals.map((r,i)=>`<div style="display:flex;gap:10px;padding:10px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;font-size:13px;line-height:1.65;color:var(--text2);margin-bottom:6px">
-      <div style="flex-shrink:0;width:22px;height:22px;border-radius:5px;background:rgba(0,201,167,0.15);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--accent2)">${i+1}</div>
-      <span>${esc(r)}</span></div>`).join('')}
-  </div>`:''}`;
-}
-
-function remPanel(){
-  return `<div class="alrt ab">🔔 Reminder calls are made the day BEFORE the appointment. Always confirm authorization before sharing details.</div>
-  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
-    ${S.reminders.map(r=>`<div style="background:var(--bg2);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--sh)">
-      <div style="padding:7px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;background:var(--bg3)">
-        <div style="width:9px;height:9px;border-radius:50%;background:${r.color};flex-shrink:0"></div>
-        <span style="font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:0.15em;color:var(--text2);font-family:monospace">${esc(r.label)}</span>
-      </div>
-      <div style="padding:13px 16px;font-size:13px;line-height:1.85;color:var(--text2);font-style:italic;white-space:pre-wrap">${esc(r.script)}</div>
-    </div>`).join('')}
-  </div>`;
-}
-
-function acrPanel(){
-  const q=S.search.toLowerCase();
-  const flt=S.acronyms.filter(a=>!q||a.code.toLowerCase().includes(q)||a.full.toLowerCase().includes(q));
-  return `<div class="alrt ay">ℹ️ RMG also known as LMG, GCMG, ADOC — always say "calling on behalf of Regal Medical Group." All OC campaigns → say "United Health Care."</div>
-  <div class="card" style="margin-top:8px;padding:0;overflow:hidden">
-    <table class="tbl"><thead><tr><th style="width:160px">Acronym</th><th>Full Name & Opening Spiel</th></tr></thead>
-    <tbody>${flt.map(a=>`<tr>
-      <td><span style="font-weight:900;font-family:monospace;color:var(--accent);font-size:13px;letter-spacing:0.05em">${esc(a.code)}</span></td>
-      <td><div style="font-weight:600;color:var(--text);margin-bottom:${a.spiel?5:0}px">${esc(a.full)}</div>
-        ${a.spiel?`<div style="font-size:12px;color:var(--text3);font-style:italic;background:var(--bg3);border:1px solid var(--border);border-left:2px solid var(--accent);padding:5px 10px;border-radius:0 4px 4px 0;white-space:pre-wrap">${esc(a.spiel)}</div>`:''}
-      </td></tr>`).join('')}
-    </tbody></table>
-  </div>`;
-}
-
-function qaPanel(){
-  const all=S.qa.flatMap(s=>s.items);
-  const allPts=all.filter(i=>!i.auto).reduce((a,i)=>a+i.pts,0);
-  const aFail=all.filter(i=>i.auto&&!S.qaChk[i.id]);
-  let score=0,status='',scC='var(--red)';
-  if(aFail.length){score=0;status=`${aFail.length} AUTO-FAIL`;scC='var(--red)';}
-  else{
-    const lost=all.filter(i=>!i.auto&&!S.qaChk[i.id]).reduce((a,i)=>a+i.pts,0);
-    score=Math.round(Math.max(0,(allPts-lost)/(allPts||1)*100));
-    if(score>=95){status='Excellent! 🌟';scC='var(--green)';}
-    else if(score>=80){status='Good';scC='var(--yellow)';}
-    else{status='Needs Work';scC='var(--red)';}
-  }
-  return `<div class="card" style="display:flex;align-items:center;gap:20px;margin-bottom:14px;flex-wrap:wrap">
-    <div style="text-align:center;flex-shrink:0">
-      <div style="font-size:52px;font-weight:900;font-family:monospace;line-height:1;color:${scC}">${score}</div>
-      <div style="font-size:9.5px;text-transform:uppercase;letter-spacing:0.18em;color:var(--text3);font-weight:700;margin-top:4px">${esc(status)}</div>
-    </div>
-    <div style="flex:1;min-width:180px">
-      <div style="height:9px;background:var(--bg3);border-radius:999px;overflow:hidden;border:1px solid var(--border);margin-bottom:7px">
-        <div style="height:100%;width:${score}%;background:${scC};border-radius:999px;transition:width 0.6s ease"></div>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <span style="font-size:9.5px;font-family:monospace;color:var(--text3);text-transform:uppercase">Live Performance Scorecard</span>
-        <button class="btn bg bsm" id="qa-rst">↺ Reset</button>
-      </div>
-    </div>
-  </div>
-  ${S.qa.map(sec=>`<div style="margin-bottom:4px">
-    <div style="display:flex;justify-content:space-between;padding:10px 4px 5px">
-      <div style="font-size:9.5px;font-weight:900;text-transform:uppercase;letter-spacing:0.2em;color:var(--text3);font-family:monospace">${esc(sec.name)}</div>
-      <div style="font-size:9.5px;font-family:monospace;color:var(--text3)">${sec.pts} pts</div>
-    </div>
-    ${sec.items.map(it=>`<div class="aqai" data-qi="${it.id}">
-      <div class="qchk ${S.qaChk[it.id]?(it.auto?'f':'p'):''}">
-        ${S.qaChk[it.id]?'<span style="color:#fff;font-size:11px">✓</span>':''}
-      </div>
-      <div style="flex:1">
-        <div style="font-size:12.5px;font-weight:500;color:var(--text);line-height:1.4">${esc(it.text)}</div>
-        <div style="font-size:9.5px;color:var(--text3);font-family:monospace;margin-top:2px">${esc(it.note)}</div>
-      </div>
-      ${it.auto?'<span class="bdg bg-r">Auto-fail</span>':''}
-      ${it.pts>=10&&!it.auto?'<span class="bdg bg-r">Critical</span>':''}
-      ${it.pts>0?`<span style="font-size:10.5px;font-family:monospace;color:var(--text3)">${it.pts}pt</span>`:''}
-    </div>`).join('')}
-  </div>`).join('')}`;
-}
-
-function crmPanel(){
-  const yes=["Appointment date","Couple or multiple members at same address","No email → write 'no email address'","Physical address if different from mailing","Authorized person booked appointment","Member requests specific time (+ disclaimer)","Special NP instructions","Gift card amount and type","Reason for Not Interested or DNC"];
-  const no=["Email, phone, new address (system handles it)","Appointment window","Medication / Pets reminders","Gate code / Parking / Translator requests",'"No NP Available" / "No answer at [number]"','"2nd dial / 3rd dial"',"WOP · MOP · HU · NVM · LVM","NI or DNC without reason"];
-  return `<div class="alrt ar">⚠️ WellMed MU — DRE/BMD/OMW: Must note "DRE ONLY – NO CHART NEEDED"</div>
-  <div class="alrt ab">ℹ️ Transferred calls: The agent who RECEIVES the transfer leaves the CRM notes.</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:4px">
-    <div class="pc" style="border:2px solid rgba(16,185,129,0.25)">
-      <div class="ph" style="background:var(--gbg)">
-        <span style="font-size:10.5px;font-weight:900;text-transform:uppercase;color:var(--green);letter-spacing:0.18em">Only Note These</span><span style="color:var(--green);font-size:18px">✓</span>
-      </div>
-      <ul class="pl">${yes.map(i=>`<li><span style="color:var(--green)">✓</span><span style="font-size:12.5px;color:var(--text2)">${esc(i)}</span></li>`).join('')}</ul>
-    </div>
-    <div class="pc" style="border:2px solid rgba(239,68,68,0.25)">
-      <div class="ph" style="background:var(--rbg)">
-        <span style="font-size:10.5px;font-weight:900;text-transform:uppercase;color:var(--red);letter-spacing:0.18em">Never Note These</span><span style="color:var(--red);font-size:18px">✗</span>
-      </div>
-      <ul class="pl">${no.map(i=>`<li><span style="color:var(--red)">✗</span><span style="font-size:12.5px;color:var(--text3)">${esc(i)}</span></li>`).join('')}</ul>
-    </div>
-  </div>`;
-}
-
-function procPanel(){
-  return `<div style="display:flex;flex-direction:column;gap:14px">
-    <div class="card">
-      <h3 style="font-size:15px;font-weight:700;margin-bottom:12px">💬 Disconnected Call Process</h3>
-      <div class="alrt ab" style="margin-bottom:12px">ℹ️ Always attempt ONE callback. If inbound comes in right after → handle inbound first.</div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:14px">
-        ${['Static Issues','Ghost Call','Abrupt Disc.','Phone Died'].map(t=>`<div style="padding:9px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;text-align:center;font-size:12px;color:var(--text2);font-family:monospace">${t}</div>`).join('')}
-      </div>
-      <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.18em;color:var(--text3);margin-bottom:9px;font-family:monospace">Member in a Hurry</div>
-      <p style="font-style:italic;font-weight:600;color:var(--text);font-size:14px;margin-bottom:9px">"Can you stay on the line for a few more minutes?"</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:14px">
-        <div style="padding:12px;border-radius:8px;background:var(--gbg);border:1px solid rgba(16,185,129,0.2)">
-          <div style="font-size:9.5px;font-weight:900;text-transform:uppercase;color:var(--green);margin-bottom:5px">If YES</div>
-          <div style="font-size:12.5px;color:var(--text2)">Book. Handle crucial info first, non-crucial later.</div>
-        </div>
-        <div style="padding:12px;border-radius:8px;background:var(--rbg);border:1px solid rgba(239,68,68,0.2)">
-          <div style="font-size:9.5px;font-weight:900;text-transform:uppercase;color:var(--red);margin-bottom:5px">If NO</div>
-          <div style="font-size:12.5px;color:var(--text2)">Do NOT book. Probe for callback time.</div>
-        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px">
-        <div style="padding:12px;border-radius:8px;background:var(--rbg);border:1px solid rgba(239,68,68,0.2);border-left:4px solid var(--red)">
-          <div style="font-size:9.5px;font-weight:900;text-transform:uppercase;color:var(--red);margin-bottom:7px">Crucial — Cannot book without</div>
-          <ul style="margin:0;padding:0 0 0 14px;font-size:11.5px;color:var(--text2);line-height:2">
-            ${['Home address (home visits)','Gate code & Apt number','Appointment date & time','All mammogram questions','DRE: open eye? Parkinson\'s?'].map(i=>`<li>${i}</li>`).join('')}
-          </ul>
-        </div>
-        <div style="padding:12px;border-radius:8px;background:var(--gbg);border:1px solid rgba(16,185,129,0.2);border-left:4px solid var(--green)">
-          <div style="font-size:9.5px;font-weight:900;text-transform:uppercase;color:var(--green);margin-bottom:7px">Non-crucial — Can still book</div>
-          <ul style="margin:0;padding:0 0 0 14px;font-size:11.5px;color:var(--text2);line-height:2">
-            ${['Building # & Parking','Pets & Medication list','Gift card & Telemed email','Other household members','DRE prep instructions'].map(i=>`<li>${i}</li>`).join('')}
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <h3 style="font-size:15px;font-weight:700;margin-bottom:12px">⏱ Hold Process (7 Steps)</h3>
-      <div class="alrt ay" style="margin-bottom:12px">⚠️ Acceptable hold: 2–3 minutes max. Always ask permission first.</div>
-      ${[{n:1,t:"Ask permission",e:'"May I place the call on hold?"'},{n:2,t:"Explain reason",e:'"I just need to check the schedule."'},{n:3,t:"Set expectations",e:'"It should only take 2 min. I\'ll be right back."'},{n:4,t:"Place on hold via Five9",e:"Monitor — don't exceed promised time."},{n:5,t:"If taking longer, return with update",e:'"I need 2 more min. I\'ll be right back."'},{n:6,t:"Return promptly",e:'"Thank you for staying on hold."'},{n:7,t:"If long hold, apologize",e:'"I apologize for the wait. Thank you for your patience."'}].map(s=>`
-        <div style="display:flex;gap:12px;border-bottom:1px solid var(--border);padding:10px 0;align-items:flex-start">
-          <div style="flex-shrink:0;width:30px;height:30px;border-radius:50%;background:rgba(0,201,167,0.12);border:1px solid rgba(0,201,167,0.25);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:var(--accent2);font-family:monospace">${s.n}</div>
-          <div><div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:2px">${s.t}</div>
-          <div style="font-size:12px;color:var(--text3);font-style:italic">${s.e}</div></div>
-        </div>`).join('')}
-    </div>
+    <div class="sbox">${a.scripts[at]||'N/A'}</div>
   </div>`;
 }
 
 // ── ADMIN PANEL ──────────────────────────────────────────────────────
 const ANAV=[
-  {id:'dashboard',ic:'📊',lb:'Dashboard'},{id:'gsearch',ic:'🔍',lb:'Global Search'},
-  {id:'acc_mgr',ic:'🏥',lb:'Accounts'},{id:'dur_mgr',ic:'⏱',lb:'Durations'},
-  {id:'aer_mgr',ic:'💬',lb:'AER Rebuttals'},{id:'acr_mgr',ic:'📖',lb:'Acronyms'},
-  {id:'rem_mgr',ic:'🔔',lb:'Reminders'},{id:'seo_mgr',ic:'🔎',lb:'SEO Metadata'},
-  {id:'users_mgr',ic:'👥',lb:'User Management'},{id:'analytics',ic:'📈',lb:'Analytics'},
-  {id:'revisions',ic:'🕐',lb:'Revision History'},{id:'backup',ic:'💾',lb:'Backup & Restore'}
+  {id:'dashboard',ic:'📊',lb:'Dashboard'},{id:'acc_mgr',ic:'🏥',lb:'Accounts'}
 ];
 
 function admPanel(){
   return `<div class="aw">
     <div class="asb">
       <div style="display:flex;align-items:center;gap:7px;padding:7px 9px;background:var(--abg);border-radius:7px;border:1px solid rgba(124,58,237,0.2);margin-bottom:10px">
-        <span>🛡️</span><span style="font-size:11px;font-weight:700;color:var(--admin)">Admin Mode Active</span>
+        <span>🛡️</span><span style="font-size:11px;font-weight:700;color:var(--admin)">Admin Mode</span>
       </div>
       ${ANAV.map(n=>`<button class="anav${S.adminPanel===n.id?' on':''}" data-an="${n.id}"><span>${n.ic}</span>${n.lb}</button>`).join('')}
-      <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--border)">
-        <button class="btn bd bsm" id="adm-lock" style="width:100%;justify-content:center">🔒 Lock Admin</button>
-      </div>
     </div>
     <div class="ac2">${admSec()}</div>
   </div>`;
@@ -749,12 +414,8 @@ function admPanel(){
 
 function admSec(){
   switch(S.adminPanel){
-    case 'dashboard':return admDash();case 'gsearch':return admGSearch();
-    case 'acc_mgr':return admAccs();case 'dur_mgr':return admDurs();
-    case 'aer_mgr':return admAER();case 'acr_mgr':return admAcrs();
-    case 'rem_mgr':return admRems();case 'seo_mgr':return admSEO();
-    case 'users_mgr':return admUsers();case 'analytics':return admAnalytics();
-    case 'revisions':return admRevisions();case 'backup':return admBackup();
+    case 'dashboard':return admDash();
+    case 'acc_mgr':return admAccs();
     default:return '';
   }
 }
@@ -763,68 +424,11 @@ function admDash(){
   const total=S.accounts.length,vis=S.accounts.filter(a=>a.visible!==false).length;
   return `<div>
     <div class="st">Command Center</div><div class="ss">Full CMS — ${new Date().toLocaleDateString()}</div>
-    <div class="sg">
-      ${[{lb:'Total Accounts',v:total,c:'var(--accent2)'},{lb:'Published',v:vis,c:'var(--green)'},{lb:'Hidden',v:total-vis,c:'var(--yellow)'},{lb:'AER Scripts',v:S.aer.length,c:'var(--accentB)'},{lb:'Durations',v:S.durations.length,c:'var(--text2)'},{lb:'Acronyms',v:S.acronyms.length,c:'var(--admin)'},{lb:'Users',v:S.users.length,c:'var(--accent)'},{lb:'Revisions',v:S.revisions.length,c:'var(--text3)'}].map(s=>`
-        <div class="sc"><div class="sv" style="color:${s.c}">${s.v}</div><div class="sl">${s.lb}</div></div>`).join('')}
-    </div>
-    <div class="card" style="margin-bottom:14px">
-      <div class="chdr">Quick Actions</div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <button class="btn bp" data-an="acc_mgr">🏥 Manage Accounts</button>
-        <button class="btn bpu" data-an="aer_mgr">💬 Edit Rebuttals</button>
-        <button class="btn bg" data-an="gsearch">🔍 Global Search</button>
-        <button class="btn bg" data-an="analytics">📈 Analytics</button>
-        <button class="btn bg" data-an="backup">💾 Backup</button>
-      </div>
-    </div>
     <div class="card">
-      <div class="chdr">Recent Changes</div>
-      ${S.revisions.slice(0,6).map(r=>`<div class="rv"><div class="rdot"></div><div style="flex:1">
-        <div style="font-size:12.5px;font-weight:600;color:var(--text)">${esc(r.section)}: ${esc(r.desc)}</div>
-        <div style="font-size:10px;color:var(--text3);font-family:monospace">${esc(r.ts)}</div>
-      </div></div>`).join('')||'<div style="color:var(--text3);font-size:13px;text-align:center;padding:20px">No changes yet</div>'}
+      <div class="chdr">Stats</div>
+      <p>Total Accounts: ${total} | Published: ${vis}</p>
     </div>
   </div>`;
-}
-
-function admGSearch(){
-  return `<div>
-    <div class="st">Global Search</div><div class="ss">Search across all hub content — accounts, scripts, rebuttals, acronyms, durations</div>
-    <div style="position:relative;margin-bottom:16px">
-      <span style="position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:15px">🔍</span>
-      <input id="gsch-inp" class="ainp" placeholder="Search all content…" value="${esc(S.gSearchQ)}" style="padding-left:36px;font-size:14px;width:100%"/>
-    </div>
-    ${S.gSearchRes.length?`<div style="font-size:11px;color:var(--text3);margin-bottom:8px">${S.gSearchRes.length} result(s)</div>
-      ${S.gSearchRes.map(r=>`<div class="sr" data-p="${r.panel}">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
-          <span class="bdg bg-t">${esc(r.section)}</span>
-          <span style="font-size:12.5px;font-weight:700;color:var(--text)">${esc(r.title)}</span>
-        </div>
-        <div style="font-size:12px;color:var(--text2);font-style:italic">${esc(r.snippet)}</div>
-      </div>`).join('')}`:S.gSearchQ?'<div style="text-align:center;padding:40px;color:var(--text3)">No results found</div>':'<div style="text-align:center;padding:40px;color:var(--text3)">Start typing to search all hub content</div>'}
-  </div>`;
-}
-
-function runSearch(q){
-  if(!q){S.gSearchRes=[];return;}
-  const ql=q.toLowerCase(),res=[];
-  S.accounts.forEach(a=>{
-    if(a.name.toLowerCase().includes(ql)||JSON.stringify(a.scripts||{}).toLowerCase().includes(ql)||a.gcNote.toLowerCase().includes(ql))
-      res.push({section:'Accounts',title:a.name,snippet:a.gcNote||a.types.join(', '),panel:'accounts'});
-  });
-  S.aer.forEach(o=>{
-    if(o.name.toLowerCase().includes(ql)||o.ack.toLowerCase().includes(ql)||o.rebuttals.join(' ').toLowerCase().includes(ql))
-      res.push({section:'AER',title:o.name,snippet:o.ack.substring(0,80),panel:'aer'});
-  });
-  S.acronyms.forEach(a=>{
-    if(a.code.toLowerCase().includes(ql)||a.full.toLowerCase().includes(ql))
-      res.push({section:'Acronyms',title:a.code,snippet:a.full,panel:'acronyms'});
-  });
-  S.durations.forEach(d=>{
-    if(d.account.toLowerCase().includes(ql))
-      res.push({section:'Durations',title:d.account,snippet:d.dur+(d.note?' — '+d.note:''),panel:'duration'});
-  });
-  S.gSearchRes=res.slice(0,25);
 }
 
 // ── RICH TEXT EDITOR ─────────────────────────────────────────────────
@@ -836,31 +440,31 @@ function rteHTML(bodyId,content){
     {cmd:'formatBlock',val:'p',lb:'P'},'|',
     {cmd:'insertUnorderedList',lb:'•—'},{cmd:'insertOrderedList',lb:'1.'},'|',
     {cmd:'createLink',lb:'🔗'},{cmd:'removeFormat',lb:'✕'},'|',
-    {cmd:'undo',lb:'↩'},{cmd:'redo',lb:'↪'},'|',
-    {cmd:'insertTable',lb:'⊞'},{cmd:'insertCode',lb:'&lt;/&gt;'}
+    {cmd:'undo',lb:'↩'},{cmd:'redo',lb:'↪'}
   ];
-  return `<div class="rte-tb">
-    <select class="rsel" data-rte="${bodyId}" data-cmd="fontSize">
-      ${[1,2,3,4,5].map((s,i)=>`<option value="${s}" ${s===3?'selected':''}>${[10,12,14,16,18][i]}px</option>`).join('')}
-    </select>
-    <select class="rsel" data-rte="${bodyId}" data-cmd="foreColor" style="width:76px">
-      <option value="">Color</option>
-      <option value="#000000">Black</option><option value="#ef4444">Red</option>
-      <option value="#f59e0b">Orange</option><option value="#10b981">Green</option>
-      <option value="#3b82f6">Blue</option><option value="#7c3aed">Purple</option>
-    </select>
-    <select class="rsel" data-rte="${bodyId}" data-cmd="hiliteColor" style="width:82px">
-      <option value="transparent">Highlight</option>
-      <option value="#fef08a">Yellow</option><option value="#bbf7d0">Green</option>
-      <option value="#bfdbfe">Blue</option><option value="#fecaca">Red</option>
-    </select>
-    <div class="rsep"></div>
-    ${tools.map(t=>t==='|'?'<div class="rsep"></div>':
-      `<button class="rte-t" data-rte="${bodyId}" data-cmd="${t.cmd}" ${t.val?`data-val="${t.val}"`:''}>${t.lb}</button>`
-    ).join('')}
-  </div>
-  <div class="rbody" id="${bodyId}" contenteditable="true">${content}</div>
-  <div class="rfoot"><span id="${bodyId}-wc">0 words</span><span>Ctrl+B/I/U · Ctrl+Z/Y</span></div>`;
+  return `<div class="rte-wrap">
+    <div class="rte-tb">
+      <select class="rsel" data-rte="${bodyId}" data-cmd="fontSize">
+        ${[1,2,3,4,5].map((s,i)=>`<option value="${s}" ${s===3?'selected':''}>${[10,12,14,16,18][i]}px</option>`).join('')}
+      </select>
+      <select class="rsel" data-rte="${bodyId}" data-cmd="foreColor" style="width:76px">
+        <option value="">Color</option>
+        <option value="#000000">Black</option><option value="#ef4444">Red</option>
+        <option value="#f59e0b">Orange</option><option value="#10b981">Green</option>
+        <option value="#3b82f6">Blue</option><option value="#7c3aed">Purple</option>
+      </select>
+      <select class="rsel" data-rte="${bodyId}" data-cmd="hiliteColor" style="width:82px">
+        <option value="transparent">Highlight</option>
+        <option value="#fef08a">Yellow</option><option value="#bbf7d0">Green</option>
+        <option value="#bfdbfe">Blue</option><option value="#fecaca">Red</option>
+      </select>
+      <div class="rsep"></div>
+      ${tools.map(t=>t==='|'?'<div class="rsep"></div>':
+        `<button class="rte-t" data-rte="${bodyId}" data-cmd="${t.cmd}" ${t.val?`data-val="${t.val}"`:''}>${t.lb}</button>`
+      ).join('')}
+    </div>
+    <div class="rbody" id="${bodyId}" contenteditable="true">${content}</div>
+  </div>`;
 }
 
 // ── ACCOUNTS MANAGER ─────────────────────────────────────────────────
@@ -896,7 +500,7 @@ function accRow(a){
 
 function accForm(a){
   const isNew=!a;
-  const v=a||{id:Date.now(),name:'',tag:'inhome',types:['In-Home'],dur:'45 min',win:'3 hrs',gc:false,gcAmt:'',gcType:'',gcTime:'',gcContact:'',gcNote:'',visible:true,seo:{title:'',desc:''},scripts:{opening:'',required:'',closing:''}};
+  const v=a||{id:Date.now(),name:'',tag:'inhome',types:['In-Home'],dur:'45 min',win:'3 hrs',gc:false,gcAmt:'',gcType:'',gcTime:'',gcContact:'',gcNote:'',visible:true,seo:{title:'',desc:''},scripts:{opening:'',pitch:'',verification:'',required:'',closing:''}};
   return `<div style="background:var(--bg2);border:2px solid var(--accent);border-radius:10px;padding:16px;margin-bottom:10px">
     <div style="font-size:11px;font-weight:700;color:var(--accent2);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:12px">${isNew?'➕ New Account':'✏️ Edit: '+esc(v.name)}</div>
     <div class="fg">
@@ -922,7 +526,7 @@ function accForm(a){
       <div><label class="albl">GC Notes</label><input class="ainp" id="af-gcNote" value="${esc(v.gcNote)}"/></div>
       ${['opening','pitch','verification','required','closing'].map(k=>`
         <div><label class="albl">${SL[k]||k} Script</label>
-          <div class="rte-wrap">${rteHTML('rte-'+k,v.scripts&&v.scripts[k]||'')}</div>
+          ${rteHTML('rte-'+k,v.scripts&&v.scripts[k]||'')}
         </div>`).join('')}
       <div style="display:flex;gap:8px;margin-top:4px">
         <button class="btn bp" data-save-acc="${v.id}" data-new="${isNew?1:0}">💾 Save Account</button>
@@ -932,522 +536,152 @@ function accForm(a){
   </div>`;
 }
 
-// ── DURATIONS MANAGER ────────────────────────────────────────────────
-function admDurs(){
-  return `<div>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
-      <div><div class="st">Manage Durations</div><div class="ss">Edit visit duration rules</div></div>
-      <button class="btn bp" id="add-dur">+ Add Row</button>
-    </div>
-    ${S.editId==='new-dur'?durForm(null):''}
-    <div class="card" style="padding:0;overflow:hidden"><div style="overflow-x:auto">
-      <table class="tbl"><thead><tr><th>Account</th><th>Duration</th><th>Class</th><th>Notes</th><th>Actions</th></tr></thead>
-      <tbody>${S.durations.map((d,i)=>S.editId===`dur-${i}`?`<tr><td colspan="5" style="padding:0">${durForm(d,i)}</td></tr>`:
-        `<tr><td style="font-weight:600">${esc(d.account)}</td>
-          <td><span class="bdg ${d.cls==='30'?'bg-g':d.cls==='45'?'bg-y':'bg-r'}">${esc(d.dur)}</span></td>
-          <td style="font-family:monospace;font-size:11px;color:var(--text3)">${esc(d.cls)}</td>
-          <td style="color:var(--text3);font-size:12px;font-style:italic">${esc(d.note)||'—'}</td>
-          <td style="white-space:nowrap">
-            <button class="btn bg bxs" data-edit-dur="${i}">✏️</button>
-            <button class="btn bd bxs" data-del-dur="${i}">🗑</button>
-          </td></tr>`).join('')}
-      </tbody></table>
-    </div></div>
-  </div>`;
-}
-function durForm(d,idx){
-  const v=d||{account:'',dur:'45 min',cls:'45',note:''};
-  return `<div style="padding:12px;background:var(--bg2);border:2px solid var(--accent);border-radius:8px;margin:6px">
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr auto;gap:8px;align-items:end">
-      <div><label class="albl">Account</label><input class="ainp" id="df-acc" value="${esc(v.account)}"/></div>
-      <div><label class="albl">Duration</label><input class="ainp" id="df-dur" value="${esc(v.dur)}"/></div>
-      <div><label class="albl">Class</label><select class="ainp" id="df-cls">${['30','45','1h'].map(c=>`<option value="${c}" ${v.cls===c?'selected':''}>${c}</option>`).join('')}</select></div>
-      <div><label class="albl">Notes</label><input class="ainp" id="df-note" value="${esc(v.note)}"/></div>
-      <div style="display:flex;gap:5px">
-        <button class="btn bp bsm" data-save-dur="${d===null?'new':idx}">💾</button>
-        <button class="btn bg bsm" id="df-cancel">✕</button>
-      </div>
-    </div>
-  </div>`;
-}
-
-// ── AER MANAGER ──────────────────────────────────────────────────────
-function admAER(){
-  return `<div>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
-      <div><div class="st">Manage AER Rebuttals</div><div class="ss">Edit Acknowledge, Empathize, Rebuttal scripts</div></div>
-      <button class="btn bp" id="add-aer">+ New Objection</button>
-    </div>
-    ${S.editId==='new-aer'?aerForm(null):''}
-    ${S.aer.map((o,i)=>S.editId===`aer-${i}`?aerForm(o,i):`<div class="rw">
-      <span class="dh">⠿</span>
-      <div style="flex:1"><div style="font-size:13px;font-weight:600;color:var(--text)">${esc(o.name)}</div>
-        <div style="font-size:11px;color:var(--text3)">${o.rebuttals.length} rebuttal(s) · ${esc(o.ack.substring(0,50))}…</div>
-      </div>
-      <button class="btn bg bsm" data-edit-aer="${i}">✏️ Edit</button>
-      <button class="btn bd bsm" data-del-aer="${i}">🗑</button>
-    </div>`).join('')}
-  </div>`;
-}
-function aerForm(o,idx){
-  const v=o||{id:'',name:'',ack:'',emp:'',rebuttals:['','','']};
-  return `<div style="background:var(--bg2);border:2px solid var(--accent);border-radius:10px;padding:16px;margin-bottom:10px">
-    <div class="fg">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-        <div><label class="albl">Name</label><input class="ainp" id="aerf-name" value="${esc(v.name)}"/></div>
-        <div><label class="albl">ID Slug</label><input class="ainp" id="aerf-id" value="${esc(v.id)}"/></div>
-      </div>
-      <div><label class="albl">Acknowledge</label><div class="rte-wrap">${rteHTML('rte-ack',v.ack)}</div></div>
-      <div><label class="albl">Empathize</label><div class="rte-wrap">${rteHTML('rte-emp',v.emp)}</div></div>
-      ${(v.rebuttals||['','']).map((r,ri)=>`<div><label class="albl">Rebuttal ${ri+1}</label><div class="rte-wrap">${rteHTML('rte-reb'+ri,r)}</div></div>`).join('')}
-      <div style="display:flex;gap:8px">
-        <button class="btn bp" data-save-aer="${o?idx:'new'}">💾 Save</button>
-        <button class="btn bg" id="aerf-cancel">Cancel</button>
-      </div>
-    </div>
-  </div>`;
-}
-
-// ── ACRONYMS MANAGER ─────────────────────────────────────────────────
-function admAcrs(){
-  return `<div>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
-      <div><div class="st">Manage Acronyms</div><div class="ss">Edit codex reference entries</div></div>
-      <button class="btn bp" id="add-acr">+ New Entry</button>
-    </div>
-    ${S.editId==='new-acr'?acrForm(null):''}
-    ${S.acronyms.map((a,i)=>S.editId===`acr-${i}`?acrForm(a,i):`<div class="rw">
-      <span class="dh">⠿</span>
-      <div style="flex:1"><span style="font-weight:900;font-family:monospace;color:var(--accent);font-size:13px;margin-right:10px">${esc(a.code)}</span>
-        <span style="font-size:12px;color:var(--text2)">${esc(a.full)}</span></div>
-      <button class="btn bg bsm" data-edit-acr="${i}">✏️</button>
-      <button class="btn bd bsm" data-del-acr="${i}">🗑</button>
-    </div>`).join('')}
-  </div>`;
-}
-function acrForm(a,idx){
-  const v=a||{code:'',full:'',spiel:''};
-  return `<div style="background:var(--bg2);border:2px solid var(--accent);border-radius:10px;padding:14px;margin-bottom:10px">
-    <div class="fg">
-      <div style="display:grid;grid-template-columns:1fr 2fr;gap:8px">
-        <div><label class="albl">Code/Acronym</label><input class="ainp" id="acrf-code" value="${esc(v.code)}"/></div>
-        <div><label class="albl">Full Name</label><input class="ainp" id="acrf-full" value="${esc(v.full)}"/></div>
-      </div>
-      <div><label class="albl">Opening Spiel</label><textarea class="atxt" id="acrf-spiel">${esc(v.spiel)}</textarea></div>
-      <div style="display:flex;gap:8px">
-        <button class="btn bp" data-save-acr="${a?idx:'new'}">💾 Save</button>
-        <button class="btn bg" id="acrf-cancel">Cancel</button>
-      </div>
-    </div>
-  </div>`;
-}
-
-// ── REMINDERS MANAGER ────────────────────────────────────────────────
-function admRems(){
-  return `<div>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
-      <div><div class="st">Manage Reminder Scripts</div><div class="ss">Edit follow-up call scripts</div></div>
-      <button class="btn bp" id="add-rem">+ New Script</button>
-    </div>
-    ${S.editId==='new-rem'?remForm(null):''}
-    ${S.reminders.map((r,i)=>S.editId===`rem-${i}`?remForm(r,i):`<div class="rw">
-      <span class="dh">⠿</span>
-      <div style="width:12px;height:12px;border-radius:50%;background:${r.color};flex-shrink:0"></div>
-      <div style="flex:1"><div style="font-size:13px;font-weight:600;color:var(--text)">${esc(r.label)}</div>
-        <div style="font-size:11px;color:var(--text3)">${esc(r.script.substring(0,70))}…</div></div>
-      <button class="btn bg bsm" data-edit-rem="${i}">✏️</button>
-      <button class="btn bd bsm" data-del-rem="${i}">🗑</button>
-    </div>`).join('')}
-  </div>`;
-}
-function remForm(r,idx){
-  const v=r||{label:'',color:'#00c9a7',script:''};
-  return `<div style="background:var(--bg2);border:2px solid var(--accent);border-radius:10px;padding:14px;margin-bottom:10px">
-    <div class="fg">
-      <div style="display:grid;grid-template-columns:1fr auto;gap:8px">
-        <div><label class="albl">Label</label><input class="ainp" id="remf-label" value="${esc(v.label)}"/></div>
-        <div><label class="albl">Color</label><input type="color" id="remf-color" value="${v.color}" style="height:36px;width:50px;border:1px solid var(--border);border-radius:6px;cursor:pointer;padding:2px"/></div>
-      </div>
-      <div><label class="albl">Script</label><div class="rte-wrap">${rteHTML('rte-remscript',v.script)}</div></div>
-      <div style="display:flex;gap:8px">
-        <button class="btn bp" data-save-rem="${r?idx:'new'}">💾 Save</button>
-        <button class="btn bg" id="remf-cancel">Cancel</button>
-      </div>
-    </div>
-  </div>`;
-}
-
-// ── SEO MANAGER ──────────────────────────────────────────────────────
-function admSEO(){
-  return `<div>
-    <div class="st">SEO Metadata Editor</div><div class="ss">Manage per-account title tags and meta descriptions</div>
-    <div class="alrt ab" style="margin-bottom:14px">ℹ️ SEO data is stored per account for web deployment exports. Title: max 60 chars · Description: max 160 chars.</div>
-    ${S.accounts.map((a,i)=>{
-      const seo=a.seo||{title:'',desc:''};
-      const tl=(seo.title||a.name).length,dl=(seo.desc||'').length;
-      return `<div class="card" style="margin-bottom:10px">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:8px">
-          <div style="font-size:13px;font-weight:700;color:var(--text)">${esc(a.name)}</div>
-          <div style="display:flex;gap:6px">
-            <span class="bdg ${tl>60?'bg-r':tl>40?'bg-y':'bg-g'}" id="seo-tb-${i}">Title: ${tl}/60</span>
-            <span class="bdg ${dl>160?'bg-r':dl>100?'bg-y':dl>0?'bg-g':'bg-y'}" id="seo-db-${i}">Desc: ${dl}/160</span>
-          </div>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <div><label class="albl">Title Tag</label>
-            <input class="ainp" style="width:100%" id="seo-t-${i}" value="${esc(seo.title||a.name)}" placeholder="e.g. ${esc(a.name)} | Care Connectors Hub" oninput="upSEO(${i},'title',this)"/>
-          </div>
-          <div><label class="albl">Meta Description</label>
-            <textarea class="atxt" style="min-height:56px;width:100%" id="seo-d-${i}" placeholder="Brief description for search engines…" oninput="upSEO(${i},'desc',this)">${esc(seo.desc)}</textarea>
-          </div>
-        </div>
-      </div>`;}).join('')}
-  </div>`;
-}
-window.upSEO=function(idx,field,el){
-  if(!S.accounts[idx].seo)S.accounts[idx].seo={title:'',desc:''};
-  S.accounts[idx].seo[field]=el.value;persist('accounts');
-  const tl=document.getElementById(`seo-t-${idx}`).value.length;
-  const dl=document.getElementById(`seo-d-${idx}`).value.length;
-  const tb=document.getElementById(`seo-tb-${idx}`);
-  const db=document.getElementById(`seo-db-${idx}`);
-  if(tb)tb.textContent=`Title: ${tl}/60`;
-  if(db)db.textContent=`Desc: ${dl}/160`;
-};
-
-// ── USERS MANAGER ─────────────────────────────────────────────────────
-function admUsers(){
-  const roles={superadmin:{lb:'Super Admin',c:'var(--admin)'},admin:{lb:'Admin',c:'var(--accentB)'},viewer:{lb:'Viewer',c:'var(--green)'}};
-  return `<div>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
-      <div><div class="st">User Management</div><div class="ss">Manage admin accounts and role permissions</div></div>
-      <button class="btn bp" id="add-user">+ New User</button>
-    </div>
-    ${S.editId==='new-user'?userForm(null):''}
-    <div class="alrt ab" style="margin-bottom:12px">ℹ️ Roles: Super Admin = full access · Admin = edit content · Viewer = read-only</div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px">
-      ${Object.entries(roles).map(([role,r])=>`<div class="card" style="text-align:center">
-        <div style="font-size:22px;font-weight:900;color:${r.c};font-family:monospace">${S.users.filter(u=>u.role===role).length}</div>
-        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.15em;color:var(--text3);font-weight:700;margin-top:3px">${r.lb}</div>
-      </div>`).join('')}
-    </div>
-    ${S.users.map((u,i)=>S.editId===`user-${i}`?userForm(u,i):`<div class="ur">
-      <div class="uav" style="background:${u.color};font-size:20px">${u.avatar}</div>
-      <div style="flex:1">
-        <div style="font-size:13px;font-weight:700;color:var(--text)">${esc(u.name)}</div>
-        <div style="font-size:11px;color:var(--text3)">${esc(u.email)}</div>
-        <div style="font-size:10px;color:var(--text3);font-family:monospace">Created: ${esc(u.created||'')}</div>
-      </div>
-      <span class="bdg ${u.role==='superadmin'?'bg-p':u.role==='admin'?'bg-b':'bg-g'}">${roles[u.role]?.lb||u.role}</span>
-      <label class="tog"><input type="checkbox" ${u.active?'checked':''} data-tog-user="${i}"/><div class="ttrack"></div></label>
-      ${u.role!=='superadmin'?`<button class="btn bg bsm" data-edit-user="${i}">✏️</button>
-        <button class="btn bd bsm" data-del-user="${i}">🗑</button>`:'<span style="font-size:11px;color:var(--text3);padding:0 8px">Protected</span>'}
-    </div>`).join('')}
-  </div>`;
-}
-function userForm(u,idx){
-  const v=u||{name:'',email:'',role:'viewer',avatar:'🎧',color:'#10b981',active:true};
-  return `<div style="background:var(--bg2);border:2px solid var(--accent);border-radius:10px;padding:14px;margin-bottom:10px">
-    <div class="fg">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-        <div><label class="albl">Full Name</label><input class="ainp" id="uf-name" value="${esc(v.name)}"/></div>
-        <div><label class="albl">Email</label><input class="ainp" id="uf-email" value="${esc(v.email)}"/></div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
-        <div><label class="albl">Role</label><select class="ainp" id="uf-role">${['superadmin','admin','viewer'].map(r=>`<option value="${r}" ${v.role===r?'selected':''}>${r}</option>`).join('')}</select></div>
-        <div><label class="albl">Avatar Emoji</label><input class="ainp" id="uf-avatar" value="${esc(v.avatar)}"/></div>
-        <div><label class="albl">Color</label><input type="color" id="uf-color" value="${v.color}" style="height:36px;width:100%;border:1px solid var(--border);border-radius:6px;cursor:pointer"/></div>
-      </div>
-      <div style="display:flex;gap:8px">
-        <button class="btn bp" data-save-user="${u?idx:'new'}">💾 Save User</button>
-        <button class="btn bg" id="uf-cancel">Cancel</button>
-      </div>
-    </div>
-  </div>`;
-}
-
-// ── ANALYTICS ────────────────────────────────────────────────────────
-function admAnalytics(){
-  const views=[42,58,37,65,81,73,92,68,77,84,61,90];
-  const months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-  const top=[{name:'Accounts',v:320},{name:'AER Rebuttals',v:240},{name:'QA Checklist',v:198},{name:'Durations',v:155},{name:'Dispositions',v:122}];
-  const mx=Math.max(...views);
-  return `<div>
-    <div class="st">Analytics Dashboard</div><div class="ss">Usage insights across the hub</div>
-    <div class="sg">
-      ${[{lb:'Total Views',v:views.reduce((a,b)=>a+b,0),c:'var(--accent2)'},{lb:'Monthly Avg',v:Math.round(views.reduce((a,b)=>a+b,0)/12),c:'var(--accentB)'},{lb:'Peak Month',v:Math.max(...views),c:'var(--green)'},{lb:'Top Panel',v:'Accounts',c:'var(--admin)'}].map(s=>`
-        <div class="sc"><div class="sv" style="color:${s.c};font-size:${typeof s.v==='string'?'16px':'28px'}">${s.v}</div><div class="sl">${s.lb}</div></div>`).join('')}
-    </div>
-    <div class="card" style="margin-bottom:14px">
-      <div class="chdr">Monthly View Count</div>
-      <div class="bw">${views.map((v,i)=>`<div class="bar" style="height:${Math.max(8,Math.round(v/mx*100))}%" title="${months[i]}: ${v}"></div>`).join('')}</div>
-      <div style="display:flex;gap:5px;margin-top:5px">${months.map(m=>`<div style="flex:1;text-align:center;font-size:9px;color:var(--text3);font-family:monospace;text-transform:uppercase">${m}</div>`).join('')}</div>
-    </div>
-    <div class="card">
-      <div class="chdr">Top Panels by Usage</div>
-      ${top.map((p,i)=>`<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-        <div style="font-size:11px;font-weight:700;color:var(--text3);font-family:monospace;width:16px">${i+1}</div>
-        <div style="flex:1">
-          <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:3px">${p.name}</div>
-          <div style="height:6px;background:var(--bg3);border-radius:999px;overflow:hidden">
-            <div style="height:100%;width:${Math.round(p.v/top[0].v*100)}%;background:linear-gradient(90deg,var(--accent),var(--accentB));border-radius:999px;transition:width 0.8s ease"></div>
-          </div>
-        </div>
-        <div style="font-size:12px;font-family:monospace;color:var(--text2);font-weight:600;width:36px;text-align:right">${p.v}</div>
-      </div>`).join('')}
-    </div>
-  </div>`;
-}
-
-// ── REVISIONS ─────────────────────────────────────────────────────────
-function admRevisions(){
-  return `<div>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
-      <div><div class="st">Revision History</div><div class="ss">Last 100 admin changes with timestamps</div></div>
-      <button class="btn bd bsm" id="clear-revs">🗑 Clear History</button>
-    </div>
-    ${!S.revisions.length?'<div style="text-align:center;padding:50px;color:var(--text3)">No changes recorded yet</div>':
-    S.revisions.map(r=>`<div class="rv"><div class="rdot"></div><div style="flex:1">
-      <div style="font-size:12.5px;font-weight:600;color:var(--text)">${esc(r.section)}</div>
-      <div style="font-size:12px;color:var(--text2)">${esc(r.desc)}</div>
-      <div style="font-size:9.5px;color:var(--text3);font-family:monospace;margin-top:1px">${esc(r.ts)}</div>
-    </div></div>`).join('')}
-  </div>`;
-}
-
-// ── BACKUP ────────────────────────────────────────────────────────────
-function admBackup(){
-  return `<div>
-    <div class="st">Backup & Restore</div><div class="ss">Export your full configuration or restore from a JSON backup</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px">
-      <div class="card">
-        <div class="chdr">Export Configuration</div>
-        <p style="font-size:13px;color:var(--text2);margin-bottom:12px">Download entire hub config as a JSON file for backup or migration.</p>
-        <button class="btn bp" id="do-export">⬇️ Download Backup</button>
-      </div>
-      <div class="card">
-        <div class="chdr">Factory Reset</div>
-        <p style="font-size:13px;color:var(--text2);margin-bottom:12px">Reset ALL data back to original factory defaults. Cannot be undone.</p>
-        <button class="btn bd" id="do-reset">⚠️ Factory Reset</button>
-      </div>
-      <div class="card" style="grid-column:1/-1">
-        <div class="chdr">Import / Restore Backup</div>
-        <p style="font-size:13px;color:var(--text2);margin-bottom:10px">Paste a previously exported JSON backup to restore your configuration.</p>
-        <textarea class="atxt" id="import-json" placeholder="Paste JSON backup here…" style="min-height:110px;width:100%;margin-bottom:10px"></textarea>
-        <button class="btn bp" id="do-import">📤 Import Configuration</button>
-      </div>
-    </div>
-  </div>`;
-}
-
-// ── BIND ──────────────────────────────────────────────────────────────
+// ── EVENT BINDING ────────────────────────────────────────────────────
 function bind(){
-  // Nav
-  document.querySelectorAll('[data-p]').forEach(el=>el.onclick=()=>{S.panel=el.dataset.p;S.selAcc=null;S.editId=null;render();});
-  // Dark
-  const dt=document.getElementById('dark-tog');if(dt)dt.onclick=()=>{S.dark=!S.dark;save('dark',S.dark);render();};
-  // Search
-  const gs=document.getElementById('gsrch');if(gs)gs.oninput=e=>{S.search=e.target.value;ri();};
-  // Login
-  const pg=document.getElementById('pwd-go');
-  if(pg){
-    const doLogin=()=>{const v=document.getElementById('pwd').value;if(v==='Admin2026#'){S.auth=true;render();}else{document.getElementById('pwd-err').textContent='Incorrect password.';document.getElementById('pwd').value='';}};
-    pg.onclick=doLogin;document.getElementById('pwd').onkeydown=e=>{if(e.key==='Enter')doLogin();};
-    document.getElementById('pwd-back').onclick=()=>{S.panel='accounts';render();};
-  }
-  // Accounts panel
-  document.querySelectorAll('[data-aid]').forEach(el=>el.onclick=()=>{const id=parseInt(el.dataset.aid);S.selAcc=S.selAcc===id?null:id;S.activeTab='opening';ri();});
-  document.querySelectorAll('[data-f]').forEach(el=>el.onclick=()=>{S.accFilt=el.dataset.f;S.selAcc=null;ri();});
-  document.querySelectorAll('[data-tab]').forEach(el=>el.onclick=()=>{S.activeTab=el.dataset.tab;ri();});
-  // AER panel
-  document.querySelectorAll('[data-aer]').forEach(el=>el.onclick=()=>{S.aerSel=S.aerSel===el.dataset.aer?null:el.dataset.aer;ri();});
-  // QA panel
-  document.querySelectorAll('[data-qi]').forEach(el=>el.onclick=()=>{const id=el.dataset.qi;S.qaChk[id]=!S.qaChk[id];ri();});
-  const qr=document.getElementById('qa-rst');if(qr)qr.onclick=()=>{initQA();ri();};
-  // Admin nav
-  document.querySelectorAll('[data-an]').forEach(el=>el.onclick=()=>{S.adminPanel=el.dataset.an;S.editId=null;ra();bind();});
-  const al=document.getElementById('adm-lock');if(al)al.onclick=()=>{S.auth=false;S.panel='accounts';render();};
-
-  // ── Accounts CRUD
-  const aa=document.getElementById('add-acc');if(aa)aa.onclick=()=>{S.editId='new-acc';ra();bind();};
-  document.querySelectorAll('[data-edit-acc]').forEach(el=>el.onclick=()=>{S.editId=parseInt(el.dataset.editAcc);ra();bind();});
-  document.querySelectorAll('[data-del-acc]').forEach(el=>el.onclick=()=>{
-    if(!confirm('Delete this account?'))return;
-    const id=parseInt(el.dataset.delAcc),name=S.accounts.find(a=>a.id===id)?.name||'';
-    S.accounts=S.accounts.filter(a=>a.id!==id);persist('accounts');addRev('Accounts','Deleted: '+name);notify('✓ Account deleted');ra();bind();
-  });
-  document.querySelectorAll('[data-tog-acc]').forEach(el=>el.onchange=()=>{
-    const id=parseInt(el.dataset.togAcc),acc=S.accounts.find(a=>a.id===id);
-    if(acc){acc.visible=el.checked;persist('accounts');addRev('Accounts',`${acc.name} → ${el.checked?'Published':'Hidden'}`);notify(`✓ ${acc.name} ${el.checked?'published':'hidden'}`);}
-  });
-  document.querySelectorAll('[data-save-acc]').forEach(el=>el.onclick=()=>{
-    const id=parseInt(el.dataset.saveAcc),isNew=el.dataset.new==='1';
-    const gt=bid=>{const e=document.getElementById(bid);return e?(e.innerText||e.textContent||'').trim():'';}
-    const acc={
-      id:isNew?Date.now():id,name:gv('af-name'),tag:gv('af-tag'),
-      types:gv('af-types').split(',').map(t=>t.trim()).filter(Boolean),
-      dur:gv('af-dur'),win:gv('af-win'),
-      gc:document.getElementById('af-gc')?.checked||false,
-      gcAmt:gv('af-gcAmt'),gcType:gv('af-gcType'),gcTime:gv('af-gcTime'),gcContact:gv('af-gcContact'),gcNote:gv('af-gcNote'),
-      visible:true,seo:{title:'',desc:''},
-      scripts:{opening:gt('rte-opening'),pitch:gt('rte-pitch'),verification:gt('rte-verification'),required:gt('rte-required'),closing:gt('rte-closing')}
-    };
-    if(isNew)S.accounts.push(acc);else{const i=S.accounts.findIndex(a=>a.id===id);if(i!==-1)S.accounts[i]=acc;}
-    persist('accounts');addRev('Accounts',(isNew?'Added':'Updated')+': '+acc.name);notify(`✓ "${acc.name}" saved`);S.editId=null;ra();bind();
-  });
-  const afc=document.getElementById('af-cancel');if(afc)afc.onclick=()=>{S.editId=null;ra();bind();};
-
-  // ── Durations CRUD
-  const ad=document.getElementById('add-dur');if(ad)ad.onclick=()=>{S.editId='new-dur';ra();bind();};
-  document.querySelectorAll('[data-edit-dur]').forEach(el=>el.onclick=()=>{S.editId=`dur-${el.dataset.editDur}`;ra();bind();});
-  document.querySelectorAll('[data-del-dur]').forEach(el=>el.onclick=()=>{
-    if(!confirm('Delete?'))return;
-    S.durations.splice(parseInt(el.dataset.delDur),1);persist('durations');addRev('Durations','Deleted entry');notify('✓ Deleted');ra();bind();
-  });
-  document.querySelectorAll('[data-save-dur]').forEach(el=>el.onclick=()=>{
-    const isNew=el.dataset.saveDur==='new';
-    const d={account:gv('df-acc'),dur:gv('df-dur'),cls:gv('df-cls'),note:gv('df-note')};
-    if(isNew)S.durations.push(d);else S.durations[parseInt(el.dataset.saveDur)]=d;
-    persist('durations');addRev('Durations',(isNew?'Added':'Updated')+': '+d.account);notify(`✓ "${d.account}" saved`);S.editId=null;ra();bind();
-  });
-  const dfc=document.getElementById('df-cancel');if(dfc)dfc.onclick=()=>{S.editId=null;ra();bind();};
-
-  // ── AER CRUD
-  const aa2=document.getElementById('add-aer');if(aa2)aa2.onclick=()=>{S.editId='new-aer';ra();bind();};
-  document.querySelectorAll('[data-edit-aer]').forEach(el=>el.onclick=()=>{S.editId=`aer-${el.dataset.editAer}`;ra();bind();});
-  document.querySelectorAll('[data-del-aer]').forEach(el=>el.onclick=()=>{
-    if(!confirm('Delete this rebuttal?'))return;
-    S.aer.splice(parseInt(el.dataset.delAer),1);persist('aer');addRev('AER','Deleted rebuttal');notify('✓ Deleted');ra();bind();
-  });
-  document.querySelectorAll('[data-save-aer]').forEach(el=>el.onclick=()=>{
-    const isNew=el.dataset.saveAer==='new';
-    const gt=bid=>{const e=document.getElementById(bid);return e?(e.innerText||'').trim():'';}
-    const o={id:gv('aerf-id')||'obj-'+Date.now(),name:gv('aerf-name'),ack:gt('rte-ack'),emp:gt('rte-emp'),rebuttals:[gt('rte-reb0'),gt('rte-reb1'),gt('rte-reb2')].filter(Boolean)};
-    if(isNew)S.aer.push(o);else S.aer[parseInt(el.dataset.saveAer)]=o;
-    persist('aer');addRev('AER',(isNew?'Added':'Updated')+': '+o.name);notify(`✓ "${o.name}" saved`);S.editId=null;ra();bind();
-  });
-  const aerc=document.getElementById('aerf-cancel');if(aerc)aerc.onclick=()=>{S.editId=null;ra();bind();};
-
-  // ── Acronyms CRUD
-  const aacr=document.getElementById('add-acr');if(aacr)aacr.onclick=()=>{S.editId='new-acr';ra();bind();};
-  document.querySelectorAll('[data-edit-acr]').forEach(el=>el.onclick=()=>{S.editId=`acr-${el.dataset.editAcr}`;ra();bind();});
-  document.querySelectorAll('[data-del-acr]').forEach(el=>el.onclick=()=>{
-    if(!confirm('Delete?'))return;
-    S.acronyms.splice(parseInt(el.dataset.delAcr),1);persist('acronyms');addRev('Acronyms','Deleted entry');notify('✓ Deleted');ra();bind();
-  });
-  document.querySelectorAll('[data-save-acr]').forEach(el=>el.onclick=()=>{
-    const isNew=el.dataset.saveAcr==='new';
-    const a={code:gv('acrf-code'),full:gv('acrf-full'),spiel:gv('acrf-spiel')};
-    if(isNew)S.acronyms.push(a);else S.acronyms[parseInt(el.dataset.saveAcr)]=a;
-    persist('acronyms');addRev('Acronyms',(isNew?'Added':'Updated')+': '+a.code);notify(`✓ "${a.code}" saved`);S.editId=null;ra();bind();
-  });
-  const acrc=document.getElementById('acrf-cancel');if(acrc)acrc.onclick=()=>{S.editId=null;ra();bind();};
-
-  // ── Reminders CRUD
-  const ar=document.getElementById('add-rem');if(ar)ar.onclick=()=>{S.editId='new-rem';ra();bind();};
-  document.querySelectorAll('[data-edit-rem]').forEach(el=>el.onclick=()=>{S.editId=`rem-${el.dataset.editRem}`;ra();bind();});
-  document.querySelectorAll('[data-del-rem]').forEach(el=>el.onclick=()=>{
-    if(!confirm('Delete?'))return;
-    S.reminders.splice(parseInt(el.dataset.delRem),1);persist('reminders');addRev('Reminders','Deleted script');notify('✓ Deleted');ra();bind();
-  });
-  document.querySelectorAll('[data-save-rem]').forEach(el=>el.onclick=()=>{
-    const isNew=el.dataset.saveRem==='new';
-    const body=document.getElementById('rte-remscript');
-    const r={label:gv('remf-label'),color:document.getElementById('remf-color')?.value||'#00c9a7',script:body?(body.innerText||'').trim():''};
-    if(isNew)S.reminders.push(r);else S.reminders[parseInt(el.dataset.saveRem)]=r;
-    persist('reminders');addRev('Reminders',(isNew?'Added':'Updated')+': '+r.label);notify(`✓ "${r.label}" saved`);S.editId=null;ra();bind();
-  });
-  const remc=document.getElementById('remf-cancel');if(remc)remc.onclick=()=>{S.editId=null;ra();bind();};
-
-  // ── Users CRUD
-  const adu=document.getElementById('add-user');if(adu)adu.onclick=()=>{S.editId='new-user';ra();bind();};
-  document.querySelectorAll('[data-edit-user]').forEach(el=>el.onclick=()=>{S.editId=`user-${el.dataset.editUser}`;ra();bind();});
-  document.querySelectorAll('[data-del-user]').forEach(el=>el.onclick=()=>{
-    if(!confirm('Delete this user?'))return;
-    S.users.splice(parseInt(el.dataset.delUser),1);persist('users');addRev('Users','Deleted user');notify('✓ User deleted');ra();bind();
-  });
-  document.querySelectorAll('[data-tog-user]').forEach(el=>el.onchange=()=>{
-    const i=parseInt(el.dataset.togUser);S.users[i].active=el.checked;persist('users');addRev('Users',`${S.users[i].name} → ${el.checked?'Active':'Inactive'}`);
-  });
-  document.querySelectorAll('[data-save-user]').forEach(el=>el.onclick=()=>{
-    const isNew=el.dataset.saveUser==='new';
-    const u={id:isNew?Date.now():S.users[parseInt(el.dataset.saveUser)]?.id,name:gv('uf-name'),email:gv('uf-email'),role:gv('uf-role'),avatar:gv('uf-avatar')||'🎧',color:document.getElementById('uf-color')?.value||'#10b981',active:true,created:new Date().toISOString().slice(0,10)};
-    if(isNew)S.users.push(u);else S.users[parseInt(el.dataset.saveUser)]=u;
-    persist('users');addRev('Users',(isNew?'Added':'Updated')+': '+u.name);notify(`✓ "${u.name}" saved`);S.editId=null;ra();bind();
-  });
-  const ufc=document.getElementById('uf-cancel');if(ufc)ufc.onclick=()=>{S.editId=null;ra();bind();};
-
-  // ── Global Search
-  const gsi=document.getElementById('gsch-inp');
-  if(gsi)gsi.oninput=e=>{S.gSearchQ=e.target.value;runSearch(S.gSearchQ);ra();bind();};
-  document.querySelectorAll('.sr[data-p]').forEach(el=>el.onclick=()=>{S.panel=el.dataset.p;S.auth=true;render();});
-
-  // ── Revisions
-  const crv=document.getElementById('clear-revs');if(crv)crv.onclick=()=>{if(confirm('Clear all revision history?')){S.revisions=[];persist('revisions');notify('✓ History cleared');ra();bind();}};
-
-  // ── Backup
-  const de=document.getElementById('do-export');
-  if(de)de.onclick=()=>{
-    const data=JSON.stringify({accounts:S.accounts,durations:S.durations,aer:S.aer,acronyms:S.acronyms,reminders:S.reminders,users:S.users},null,2);
-    const blob=new Blob([data],{type:'application/json'});
-    const a=document.createElement('a');a.href=URL.createObjectURL(blob);
-    a.download=`cc_hub_backup_${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(a.href);
-    addRev('Backup','Exported configuration');notify('✓ Backup downloaded');
-  };
-  const dr=document.getElementById('do-reset');
-  if(dr)dr.onclick=()=>{
-    if(!confirm('FACTORY RESET — all data replaced with defaults. Continue?'))return;
-    ['accounts','durations','aer','acronyms','reminders','users'].forEach(k=>{S[k]=[...DEF[k]];persist(k);});
-    S.revisions=[];persist('revisions');addRev('System','Factory reset performed');notify('✓ Factory reset complete');render();
-  };
-  const di=document.getElementById('do-import');
-  if(di)di.onclick=()=>{
-    const raw=(document.getElementById('import-json')||{}).value||'';
-    try{
-      const p=JSON.parse(raw);
-      if(!confirm('Replace all data with this backup?'))return;
-      ['accounts','durations','aer','acronyms','reminders','users'].forEach(k=>{if(p[k]){S[k]=p[k];persist(k);}});
-      addRev('System','Imported backup');notify('✓ Configuration imported');render();
-    }catch(e){alert('Invalid JSON. Please check your backup file.');}
-  };
-
-  // ── Rich Text Editor
-  document.querySelectorAll('.rte-t[data-cmd]').forEach(btn=>{
-    btn.onclick=e=>{
-      e.preventDefault();
-      const bodyId=btn.dataset.rte,body=document.getElementById(bodyId);
-      if(!body)return;body.focus();
-      const cmd=btn.dataset.cmd,val=btn.dataset.val||null;
-      if(cmd==='insertTable'){document.execCommand('insertHTML',false,'<table><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></table>');}
-      else if(cmd==='insertCode'){document.execCommand('insertHTML',false,'<pre><code>// code here</code></pre>');}
-      else if(cmd==='createLink'){const u=prompt('Enter URL:','https://');if(u)document.execCommand('createLink',false,u);}
-      else document.execCommand(cmd,false,val);
-      updWC(bodyId);
+  // Navigation
+  document.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{S.panel=b.dataset.p;ri()});
+  document.querySelectorAll('[data-an]').forEach(b=>b.onclick=()=>{S.adminPanel=b.dataset.an;ra()});
+  
+  // Dark mode
+  const dtog=document.getElementById('dark-tog');
+  if(dtog)dtog.onclick=()=>{S.dark=!S.dark;persist('dark');render()};
+  
+  // Accounts grid
+  document.querySelectorAll('[data-aid]').forEach(e=>e.onclick=()=>{S.selAcc=parseInt(e.dataset.aid);ri()});
+  
+  // Script tabs
+  document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{S.activeTab=b.dataset.tab;ri()});
+  
+  // RTE Toolbar
+  document.querySelectorAll('[data-cmd]').forEach(btn=>{
+    const cmd=btn.dataset.cmd;
+    const val=btn.dataset.val;
+    const rteId=btn.dataset.rte;
+    btn.onclick=()=>{
+      const bodyEl=document.getElementById(rteId);
+      if(bodyEl){
+        if(cmd==='fontSize' || cmd==='foreColor' || cmd==='hiliteColor'){
+          document.execCommand(cmd,false,btn.value);
+        }else if(cmd==='formatBlock'){
+          document.execCommand(cmd,false,val);
+        }else{
+          document.execCommand(cmd,false,null);
+        }
+        bodyEl.focus();
+      }
     };
   });
-  document.querySelectorAll('.rsel[data-cmd]').forEach(sel=>{
+
+  // Font size select
+  document.querySelectorAll('select[data-cmd="fontSize"]').forEach(sel=>{
     sel.onchange=()=>{
-      const bodyId=sel.dataset.rte,body=document.getElementById(bodyId);
-      if(!body)return;body.focus();document.execCommand(sel.dataset.cmd,false,sel.value);updWC(bodyId);
+      const rteId=sel.dataset.rte;
+      const bodyEl=document.getElementById(rteId);
+      if(bodyEl){
+        document.execCommand('fontSize',false,sel.value);
+        bodyEl.focus();
+      }
     };
   });
-  document.querySelectorAll('.rbody').forEach(body=>{
-    body.oninput=()=>updWC(body.id);
-    body.onkeydown=e=>{
-      if(e.ctrlKey&&e.key==='b'){e.preventDefault();document.execCommand('bold');}
-      if(e.ctrlKey&&e.key==='i'){e.preventDefault();document.execCommand('italic');}
-      if(e.ctrlKey&&e.key==='u'){e.preventDefault();document.execCommand('underline');}
+
+  // Color selects
+  document.querySelectorAll('select[data-cmd="foreColor"]').forEach(sel=>{
+    sel.onchange=()=>{
+      if(sel.value){
+        const rteId=sel.dataset.rte;
+        const bodyEl=document.getElementById(rteId);
+        if(bodyEl){
+          document.execCommand('foreColor',false,sel.value);
+          bodyEl.focus();
+        }
+      }
     };
   });
+
+  document.querySelectorAll('select[data-cmd="hiliteColor"]').forEach(sel=>{
+    sel.onchange=()=>{
+      const rteId=sel.dataset.rte;
+      const bodyEl=document.getElementById(rteId);
+      if(bodyEl){
+        document.execCommand('hiliteColor',false,sel.value||'transparent');
+        bodyEl.focus();
+      }
+    };
+  });
+
+  // Admin
+  const addAcc=document.getElementById('add-acc');
+  if(addAcc)addAcc.onclick=()=>{S.editId='new-acc';ra()};
+  
+  const saveBtn=document.querySelector('[data-save-acc]');
+  if(saveBtn)saveBtn.onclick=()=>saveAccount();
+  
+  const cancelBtn=document.getElementById('af-cancel');
+  if(cancelBtn)cancelBtn.onclick=()=>{S.editId=null;ra()};
+
+  const delBtn=document.querySelector('[data-del-acc]');
+  if(delBtn)delBtn.onclick=()=>{
+    const id=parseInt(delBtn.dataset.delAcc);
+    S.accounts=S.accounts.filter(a=>a.id!==id);
+    persist('accounts');
+    ra();
+  };
 }
 
-function updWC(bodyId){
-  const body=document.getElementById(bodyId),wc=document.getElementById(bodyId+'-wc');
-  if(body&&wc){const words=(body.innerText||'').trim().split(/\s+/).filter(Boolean).length;wc.textContent=words+' words';}
+function saveAccount(){
+  const saveBtn=document.querySelector('[data-save-acc]');
+  if(!saveBtn)return;
+  
+  const id=parseInt(saveBtn.dataset.saveAcc);
+  const isNew=parseInt(saveBtn.dataset.new);
+  
+  const name=document.getElementById('af-name').value;
+  const tag=document.getElementById('af-tag').value;
+  const dur=document.getElementById('af-dur').value;
+  const win=document.getElementById('af-win').value;
+  const types=(document.getElementById('af-types').value||'').split(',').map(t=>t.trim()).filter(t=>t);
+  const gc=document.getElementById('af-gc').checked;
+  const gcAmt=document.getElementById('af-gcAmt').value;
+  const gcType=document.getElementById('af-gcType').value;
+  const gcTime=document.getElementById('af-gcTime').value;
+  const gcContact=document.getElementById('af-gcContact').value;
+  const gcNote=document.getElementById('af-gcNote').value;
+  
+  // Get formatted content from RTE (this preserves HTML formatting)
+  const scripts={
+    opening:document.getElementById('rte-opening')?.innerHTML||'',
+    pitch:document.getElementById('rte-pitch')?.innerHTML||'',
+    verification:document.getElementById('rte-verification')?.innerHTML||'',
+    required:document.getElementById('rte-required')?.innerHTML||'',
+    closing:document.getElementById('rte-closing')?.innerHTML||''
+  };
+  
+  if(isNew){
+    S.accounts.push({id,name,tag,dur,win,types,gc,gcAmt,gcType,gcTime,gcContact,gcNote,visible:true,seo:{title:'',desc:''},scripts});
+  }else{
+    const acc=S.accounts.find(a=>a.id===id);
+    if(acc){
+      acc.name=name;
+      acc.tag=tag;
+      acc.dur=dur;
+      acc.win=win;
+      acc.types=types;
+      acc.gc=gc;
+      acc.gcAmt=gcAmt;
+      acc.gcType=gcType;
+      acc.gcTime=gcTime;
+      acc.gcContact=gcContact;
+      acc.gcNote=gcNote;
+      acc.scripts=scripts;
+    }
+  }
+  
+  persist('accounts');
+  addRev('Accounts',isNew?'Account created':'Account updated');
+  S.editId=null;
+  notify('Account saved!');
+  ra();
 }
-
-// Auto-save every 30s
-setInterval(()=>['accounts','durations','aer','acronyms','reminders'].forEach(k=>persist(k)),30000);
 
 render();
 </script>
